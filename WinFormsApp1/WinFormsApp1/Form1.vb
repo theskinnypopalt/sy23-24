@@ -16,4 +16,10 @@
         outFile.Write(TextBox1.Text)
         outFile.Close()
     End Sub
+
+    Private Sub OpenToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OpenToolStripMenuItem.Click
+        Dim inFile As New IO.StreamReader("out.txt")
+        TextBox1.Text = inFile.ReadToEnd
+        inFile.Close()
+    End Sub
 End Class
