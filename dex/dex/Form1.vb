@@ -15,6 +15,9 @@
         outFile.Write("|")
         outFile.Write(hptb.Text)
         outFile.Write("|")
+        outFile.Write(PictureBox1.ImageLocation)
+        outFile.WriteLine()
+        outFile.Close()
     End Sub
 
     Private Sub NewToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem1.Click
