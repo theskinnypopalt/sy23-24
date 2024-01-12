@@ -1,4 +1,7 @@
-﻿Public Class Form1
+﻿Imports System.IO
+
+Public Class Form1
+    Dim records(50) As String
     Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
 
     End Sub
@@ -36,5 +39,15 @@
 
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
         PictureBox1.Load(OpenFileDialog1.FileName)
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim inFile As New StreamReader("data.txt")
+        If IO.File.Exists("data.txt") Then
+            records(0) = inFile.ReadLine
+            records(1) = inFile.ReadLine
+            inFile.Close()
+        End If
+
     End Sub
 End Class
