@@ -50,8 +50,7 @@ Public Class Form1
                 records(count) = inFile.ReadLine
                 count = count + 1
             End While
-            records(0) = inFile.ReadLine
-            records(1) = inFile.ReadLine
+            records(count) = inFile.ReadLine
             inFile.Close()
             showrecord(0)
         End If
@@ -70,5 +69,15 @@ Public Class Form1
                 PictureBox1.Load(fields(5))
             End If
         End If
+    End Sub
+
+    Private Sub firstbutton_Click(sender As Object, e As EventArgs) Handles firstbutton.Click
+        current = 0
+        showrecord(current)
+    End Sub
+
+    Private Sub lastbutton_Click(sender As Object, e As EventArgs) Handles lastbutton.Click
+        current = count - 1
+        showrecord(current)
     End Sub
 End Class

@@ -51,9 +51,9 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(228, 31)
+        Me.PictureBox1.Location = New System.Drawing.Point(492, 91)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(260, 158)
+        Me.PictureBox1.Size = New System.Drawing.Size(314, 234)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
@@ -102,7 +102,7 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(145, 219)
+        Me.Label1.Location = New System.Drawing.Point(134, 94)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(52, 20)
         Me.Label1.TabIndex = 2
@@ -111,7 +111,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(104, 423)
+        Me.Label2.Location = New System.Drawing.Point(93, 298)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(93, 20)
         Me.Label2.TabIndex = 3
@@ -120,7 +120,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(155, 321)
+        Me.Label3.Location = New System.Drawing.Point(144, 196)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(42, 20)
         Me.Label3.TabIndex = 4
@@ -129,7 +129,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(114, 372)
+        Me.Label4.Location = New System.Drawing.Point(103, 247)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(83, 20)
         Me.Label4.TabIndex = 5
@@ -138,7 +138,7 @@ Partial Class Form1
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(153, 270)
+        Me.Label5.Location = New System.Drawing.Point(142, 145)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(44, 20)
         Me.Label5.TabIndex = 6
@@ -146,35 +146,35 @@ Partial Class Form1
         '
         'nametb
         '
-        Me.nametb.Location = New System.Drawing.Point(228, 216)
+        Me.nametb.Location = New System.Drawing.Point(217, 91)
         Me.nametb.Name = "nametb"
         Me.nametb.Size = New System.Drawing.Size(125, 27)
         Me.nametb.TabIndex = 7
         '
         'pricetb
         '
-        Me.pricetb.Location = New System.Drawing.Point(228, 267)
+        Me.pricetb.Location = New System.Drawing.Point(217, 142)
         Me.pricetb.Name = "pricetb"
         Me.pricetb.Size = New System.Drawing.Size(125, 27)
         Me.pricetb.TabIndex = 8
         '
         'zerosixtytb
         '
-        Me.zerosixtytb.Location = New System.Drawing.Point(228, 314)
+        Me.zerosixtytb.Location = New System.Drawing.Point(217, 189)
         Me.zerosixtytb.Name = "zerosixtytb"
         Me.zerosixtytb.Size = New System.Drawing.Size(125, 27)
         Me.zerosixtytb.TabIndex = 9
         '
         'toptb
         '
-        Me.toptb.Location = New System.Drawing.Point(228, 365)
+        Me.toptb.Location = New System.Drawing.Point(217, 240)
         Me.toptb.Name = "toptb"
         Me.toptb.Size = New System.Drawing.Size(125, 27)
         Me.toptb.TabIndex = 10
         '
         'hptb
         '
-        Me.hptb.Location = New System.Drawing.Point(228, 423)
+        Me.hptb.Location = New System.Drawing.Point(217, 298)
         Me.hptb.Name = "hptb"
         Me.hptb.Size = New System.Drawing.Size(125, 27)
         Me.hptb.TabIndex = 11
@@ -185,7 +185,7 @@ Partial Class Form1
         '
         'firstbutton
         '
-        Me.firstbutton.Location = New System.Drawing.Point(217, 506)
+        Me.firstbutton.Location = New System.Drawing.Point(217, 409)
         Me.firstbutton.Name = "firstbutton"
         Me.firstbutton.Size = New System.Drawing.Size(94, 29)
         Me.firstbutton.TabIndex = 12
@@ -194,7 +194,7 @@ Partial Class Form1
         '
         'prevbutton
         '
-        Me.prevbutton.Location = New System.Drawing.Point(364, 506)
+        Me.prevbutton.Location = New System.Drawing.Point(364, 409)
         Me.prevbutton.Name = "prevbutton"
         Me.prevbutton.Size = New System.Drawing.Size(94, 29)
         Me.prevbutton.TabIndex = 13
@@ -203,7 +203,7 @@ Partial Class Form1
         '
         'nextbutton
         '
-        Me.nextbutton.Location = New System.Drawing.Point(511, 506)
+        Me.nextbutton.Location = New System.Drawing.Point(511, 409)
         Me.nextbutton.Name = "nextbutton"
         Me.nextbutton.Size = New System.Drawing.Size(94, 29)
         Me.nextbutton.TabIndex = 14
@@ -212,7 +212,7 @@ Partial Class Form1
         '
         'lastbutton
         '
-        Me.lastbutton.Location = New System.Drawing.Point(658, 506)
+        Me.lastbutton.Location = New System.Drawing.Point(658, 409)
         Me.lastbutton.Name = "lastbutton"
         Me.lastbutton.Size = New System.Drawing.Size(94, 29)
         Me.lastbutton.TabIndex = 15
