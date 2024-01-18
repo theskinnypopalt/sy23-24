@@ -2,6 +2,8 @@
 
 Public Class Form1
     Dim records(50) As String
+    Dim current As Integer
+    Dim count As Integer
     Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
 
     End Sub
@@ -42,12 +44,31 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim inFile As New StreamReader("data.txt")
         If IO.File.Exists("data.txt") Then
+            Dim inFile As New StreamReader("data.txt")
+            While Not inFile.EndOfStream
+                records(count) = inFile.ReadLine
+                count = count + 1
+            End While
             records(0) = inFile.ReadLine
             records(1) = inFile.ReadLine
             inFile.Close()
+            showrecord(0)
         End If
 
+    End Sub
+    Sub showrecord(index As Integer)
+        If records(index) <> Nothing Then
+            Dim fields() As String
+            fields = records(index).Split("|")
+            nametb.Text = fields(0)
+            pricetb.Text = fields(1)
+            zerosixtytb.Text = fields(2)
+            toptb.Text = fields(3)
+            hptb.Text = fields(4)
+            If File.Exists(fields(5)) Then
+                PictureBox1.Load(fields(5))
+            End If
+        End If
     End Sub
 End Class
