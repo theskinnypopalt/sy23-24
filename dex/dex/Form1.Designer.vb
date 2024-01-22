@@ -78,25 +78,25 @@ Partial Class Form1
         'NewToolStripMenuItem1
         '
         Me.NewToolStripMenuItem1.Name = "NewToolStripMenuItem1"
-        Me.NewToolStripMenuItem1.Size = New System.Drawing.Size(141, 26)
-        Me.NewToolStripMenuItem1.Text = "new"
+        Me.NewToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
+        Me.NewToolStripMenuItem1.Text = "New"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'UploadToolStripMenuItem
         '
         Me.UploadToolStripMenuItem.Name = "UploadToolStripMenuItem"
-        Me.UploadToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
+        Me.UploadToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.UploadToolStripMenuItem.Text = "Upload"
         '
         'CloseToolStripMenuItem
         '
         Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(141, 26)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.CloseToolStripMenuItem.Text = "Close"
         '
         'Label1

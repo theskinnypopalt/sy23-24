@@ -6,12 +6,7 @@ Public Class Form1
     Dim count As Integer
     Dim current As Integer
     Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
-        nametb.Text = ""
-        pricetb.Text = ""
-        zerosixtytb.Text = ""
-        toptb.Text = ""
-        hptb.Text = ""
-        PictureBox1.Image = Nothing
+
     End Sub
 
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
@@ -103,5 +98,18 @@ Public Class Form1
             current = count - 1
             ShowRecord(current)
         End If
+    End Sub
+
+    Private Sub NewToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem1.Click
+        nametb.Text = ""
+        pricetb.Text = ""
+        zerosixtytb.Text = ""
+        toptb.Text = ""
+        hptb.Text = ""
+        PictureBox1.Image = Nothing
+
+        current = count
+        count = count + 1
+
     End Sub
 End Class
