@@ -26,5 +26,8 @@
         TextBox1.Text = cs.total
     End Sub
 
-
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        cs.coinReturn()
+        TextBox1.Text = cs.total.ToString("c2")
+    End Sub
 End Class

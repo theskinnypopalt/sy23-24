@@ -11,6 +11,13 @@
 
     End Property
 
+    Public Sub coinReturn()
+        Dollars = 0
+        Quarters = 0
+        Dimes = 0
+        Nickles = 0
+        Pennies = 0
+    End Sub
     Public Sub insertQuarter()
         Quarters = Quarters + 1
     End Sub
