@@ -1,4 +1,5 @@
 ﻿Public Class coinslot
+    Public Event coinReturnevent(d As Integer, q As Integer, dm As Integer, n As Integer, p As Integer)
     Public Property Quarters As Integer
     Public Property Nickles As Integer
     Public Property Dimes As Integer
@@ -12,6 +13,7 @@
     End Property
 
     Public Sub coinReturn()
+        RaiseEvent coinReturnevent(Dollars, Quarters, Dimes, Nickles, Pennies)
         Dollars = 0
         Quarters = 0
         Dimes = 0
