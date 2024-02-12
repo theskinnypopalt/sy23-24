@@ -35,7 +35,24 @@ Partial Class Form1
         Me.nicklepb = New System.Windows.Forms.PictureBox()
         Me.dimepb = New System.Windows.Forms.PictureBox()
         Me.quarterpb = New System.Windows.Forms.PictureBox()
+        Me.ProductControl12 = New vending_machiene.productControl()
+        Me.ProductControl11 = New vending_machiene.productControl()
+        Me.ProductControl10 = New vending_machiene.productControl()
+        Me.ProductControl9 = New vending_machiene.productControl()
+        Me.ProductControl8 = New vending_machiene.productControl()
+        Me.ProductControl7 = New vending_machiene.productControl()
+        Me.ProductControl6 = New vending_machiene.productControl()
+        Me.ProductControl5 = New vending_machiene.productControl()
+        Me.ProductControl4 = New vending_machiene.productControl()
+        Me.ProductControl3 = New vending_machiene.productControl()
+        Me.ProductControl2 = New vending_machiene.productControl()
         Me.ProductControl1 = New vending_machiene.productControl()
+        Me.ProductControl13 = New vending_machiene.productControl()
+        Me.ProductControl14 = New vending_machiene.productControl()
+        Me.ProductControl15 = New vending_machiene.productControl()
+        Me.ProductControl16 = New vending_machiene.productControl()
+        Me.ProductControl17 = New vending_machiene.productControl()
+        Me.ProductControl18 = New vending_machiene.productControl()
         CType(Me.dollarpb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.pennypb, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.nicklepb, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -160,23 +177,244 @@ Partial Class Form1
         Me.quarterpb.TabIndex = 11
         Me.quarterpb.TabStop = False
         '
+        'ProductControl12
+        '
+        Me.ProductControl12.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl12.count = 0
+        Me.ProductControl12.Location = New System.Drawing.Point(649, 94)
+        Me.ProductControl12.Name = "ProductControl12"
+        Me.ProductControl12.picture = CType(resources.GetObject("ProductControl12.picture"), System.Drawing.Image)
+        Me.ProductControl12.price = New Decimal(New Integer() {200, 0, 0, 131072})
+        Me.ProductControl12.productid = Nothing
+        Me.ProductControl12.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl12.TabIndex = 23
+        '
+        'ProductControl11
+        '
+        Me.ProductControl11.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl11.count = 0
+        Me.ProductControl11.Location = New System.Drawing.Point(521, 94)
+        Me.ProductControl11.Name = "ProductControl11"
+        Me.ProductControl11.picture = CType(resources.GetObject("ProductControl11.picture"), System.Drawing.Image)
+        Me.ProductControl11.price = New Decimal(New Integer() {200, 0, 0, 131072})
+        Me.ProductControl11.productid = Nothing
+        Me.ProductControl11.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl11.TabIndex = 22
+        '
+        'ProductControl10
+        '
+        Me.ProductControl10.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl10.count = 0
+        Me.ProductControl10.Location = New System.Drawing.Point(393, 94)
+        Me.ProductControl10.Name = "ProductControl10"
+        Me.ProductControl10.picture = CType(resources.GetObject("ProductControl10.picture"), System.Drawing.Image)
+        Me.ProductControl10.price = New Decimal(New Integer() {100, 0, 0, 131072})
+        Me.ProductControl10.productid = Nothing
+        Me.ProductControl10.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl10.TabIndex = 21
+        '
+        'ProductControl9
+        '
+        Me.ProductControl9.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl9.count = 0
+        Me.ProductControl9.Location = New System.Drawing.Point(265, 94)
+        Me.ProductControl9.Name = "ProductControl9"
+        Me.ProductControl9.picture = CType(resources.GetObject("ProductControl9.picture"), System.Drawing.Image)
+        Me.ProductControl9.price = New Decimal(New Integer() {100, 0, 0, 131072})
+        Me.ProductControl9.productid = Nothing
+        Me.ProductControl9.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl9.TabIndex = 20
+        '
+        'ProductControl8
+        '
+        Me.ProductControl8.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl8.count = 0
+        Me.ProductControl8.Location = New System.Drawing.Point(137, 94)
+        Me.ProductControl8.Name = "ProductControl8"
+        Me.ProductControl8.picture = CType(resources.GetObject("ProductControl8.picture"), System.Drawing.Image)
+        Me.ProductControl8.price = New Decimal(New Integer() {200, 0, 0, 131072})
+        Me.ProductControl8.productid = Nothing
+        Me.ProductControl8.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl8.TabIndex = 19
+        '
+        'ProductControl7
+        '
+        Me.ProductControl7.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl7.count = 0
+        Me.ProductControl7.Location = New System.Drawing.Point(9, 94)
+        Me.ProductControl7.Name = "ProductControl7"
+        Me.ProductControl7.picture = CType(resources.GetObject("ProductControl7.picture"), System.Drawing.Image)
+        Me.ProductControl7.price = New Decimal(New Integer() {200, 0, 0, 131072})
+        Me.ProductControl7.productid = Nothing
+        Me.ProductControl7.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl7.TabIndex = 18
+        '
+        'ProductControl6
+        '
+        Me.ProductControl6.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl6.count = 0
+        Me.ProductControl6.Location = New System.Drawing.Point(649, 5)
+        Me.ProductControl6.Name = "ProductControl6"
+        Me.ProductControl6.picture = CType(resources.GetObject("ProductControl6.picture"), System.Drawing.Image)
+        Me.ProductControl6.price = New Decimal(New Integer() {200, 0, 0, 131072})
+        Me.ProductControl6.productid = Nothing
+        Me.ProductControl6.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl6.TabIndex = 17
+        '
+        'ProductControl5
+        '
+        Me.ProductControl5.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl5.count = 0
+        Me.ProductControl5.Location = New System.Drawing.Point(521, 5)
+        Me.ProductControl5.Name = "ProductControl5"
+        Me.ProductControl5.picture = CType(resources.GetObject("ProductControl5.picture"), System.Drawing.Image)
+        Me.ProductControl5.price = New Decimal(New Integer() {200, 0, 0, 131072})
+        Me.ProductControl5.productid = Nothing
+        Me.ProductControl5.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl5.TabIndex = 16
+        '
+        'ProductControl4
+        '
+        Me.ProductControl4.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl4.count = 0
+        Me.ProductControl4.Location = New System.Drawing.Point(393, 5)
+        Me.ProductControl4.Name = "ProductControl4"
+        Me.ProductControl4.picture = CType(resources.GetObject("ProductControl4.picture"), System.Drawing.Image)
+        Me.ProductControl4.price = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.ProductControl4.productid = Nothing
+        Me.ProductControl4.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl4.TabIndex = 15
+        '
+        'ProductControl3
+        '
+        Me.ProductControl3.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl3.count = 0
+        Me.ProductControl3.Location = New System.Drawing.Point(265, 5)
+        Me.ProductControl3.Name = "ProductControl3"
+        Me.ProductControl3.picture = CType(resources.GetObject("ProductControl3.picture"), System.Drawing.Image)
+        Me.ProductControl3.price = New Decimal(New Integer() {50, 0, 0, 131072})
+        Me.ProductControl3.productid = Nothing
+        Me.ProductControl3.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl3.TabIndex = 14
+        '
+        'ProductControl2
+        '
+        Me.ProductControl2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl2.count = 0
+        Me.ProductControl2.Location = New System.Drawing.Point(137, 5)
+        Me.ProductControl2.Name = "ProductControl2"
+        Me.ProductControl2.picture = CType(resources.GetObject("ProductControl2.picture"), System.Drawing.Image)
+        Me.ProductControl2.price = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.ProductControl2.productid = Nothing
+        Me.ProductControl2.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl2.TabIndex = 13
+        '
         'ProductControl1
         '
         Me.ProductControl1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ProductControl1.count = 0
-        Me.ProductControl1.Location = New System.Drawing.Point(57, 37)
+        Me.ProductControl1.Location = New System.Drawing.Point(9, 5)
         Me.ProductControl1.Name = "ProductControl1"
         Me.ProductControl1.picture = CType(resources.GetObject("ProductControl1.picture"), System.Drawing.Image)
         Me.ProductControl1.price = New Decimal(New Integer() {150, 0, 0, 131072})
         Me.ProductControl1.productid = Nothing
-        Me.ProductControl1.Size = New System.Drawing.Size(119, 93)
+        Me.ProductControl1.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl1.TabIndex = 12
+        '
+        'ProductControl13
+        '
+        Me.ProductControl13.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl13.count = 0
+        Me.ProductControl13.Location = New System.Drawing.Point(9, 183)
+        Me.ProductControl13.Name = "ProductControl13"
+        Me.ProductControl13.picture = CType(resources.GetObject("ProductControl13.picture"), System.Drawing.Image)
+        Me.ProductControl13.price = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.ProductControl13.productid = Nothing
+        Me.ProductControl13.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl13.TabIndex = 24
+        '
+        'ProductControl14
+        '
+        Me.ProductControl14.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl14.count = 0
+        Me.ProductControl14.Location = New System.Drawing.Point(137, 183)
+        Me.ProductControl14.Name = "ProductControl14"
+        Me.ProductControl14.picture = CType(resources.GetObject("ProductControl14.picture"), System.Drawing.Image)
+        Me.ProductControl14.price = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.ProductControl14.productid = Nothing
+        Me.ProductControl14.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl14.TabIndex = 25
+        '
+        'ProductControl15
+        '
+        Me.ProductControl15.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl15.count = 0
+        Me.ProductControl15.Location = New System.Drawing.Point(265, 183)
+        Me.ProductControl15.Name = "ProductControl15"
+        Me.ProductControl15.picture = CType(resources.GetObject("ProductControl15.picture"), System.Drawing.Image)
+        Me.ProductControl15.price = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.ProductControl15.productid = Nothing
+        Me.ProductControl15.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl15.TabIndex = 26
+        '
+        'ProductControl16
+        '
+        Me.ProductControl16.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl16.count = 0
+        Me.ProductControl16.Location = New System.Drawing.Point(393, 183)
+        Me.ProductControl16.Name = "ProductControl16"
+        Me.ProductControl16.picture = CType(resources.GetObject("ProductControl16.picture"), System.Drawing.Image)
+        Me.ProductControl16.price = New Decimal(New Integer() {150, 0, 0, 131072})
+        Me.ProductControl16.productid = Nothing
+        Me.ProductControl16.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl16.TabIndex = 27
+        '
+        'ProductControl17
+        '
+        Me.ProductControl17.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl17.count = 0
+        Me.ProductControl17.Location = New System.Drawing.Point(521, 183)
+        Me.ProductControl17.Name = "ProductControl17"
+        Me.ProductControl17.picture = CType(resources.GetObject("ProductControl17.picture"), System.Drawing.Image)
+        Me.ProductControl17.price = New Decimal(New Integer() {99, 0, 0, 131072})
+        Me.ProductControl17.productid = Nothing
+        Me.ProductControl17.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl17.TabIndex = 28
+        '
+        'ProductControl18
+        '
+        Me.ProductControl18.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ProductControl18.count = 0
+        Me.ProductControl18.Location = New System.Drawing.Point(649, 183)
+        Me.ProductControl18.Name = "ProductControl18"
+        Me.ProductControl18.picture = CType(resources.GetObject("ProductControl18.picture"), System.Drawing.Image)
+        Me.ProductControl18.price = New Decimal(New Integer() {100, 0, 0, 131072})
+        Me.ProductControl18.productid = Nothing
+        Me.ProductControl18.Size = New System.Drawing.Size(122, 83)
+        Me.ProductControl18.TabIndex = 29
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1128, 630)
+        Me.Controls.Add(Me.ProductControl18)
+        Me.Controls.Add(Me.ProductControl17)
+        Me.Controls.Add(Me.ProductControl16)
+        Me.Controls.Add(Me.ProductControl15)
+        Me.Controls.Add(Me.ProductControl14)
+        Me.Controls.Add(Me.ProductControl13)
+        Me.Controls.Add(Me.ProductControl12)
+        Me.Controls.Add(Me.ProductControl11)
+        Me.Controls.Add(Me.ProductControl10)
+        Me.Controls.Add(Me.ProductControl9)
+        Me.Controls.Add(Me.ProductControl8)
+        Me.Controls.Add(Me.ProductControl7)
+        Me.Controls.Add(Me.ProductControl6)
+        Me.Controls.Add(Me.ProductControl5)
+        Me.Controls.Add(Me.ProductControl4)
+        Me.Controls.Add(Me.ProductControl3)
+        Me.Controls.Add(Me.ProductControl2)
         Me.Controls.Add(Me.ProductControl1)
         Me.Controls.Add(Me.quarterpb)
         Me.Controls.Add(Me.dimepb)
@@ -215,4 +453,21 @@ Partial Class Form1
     Friend WithEvents dimepb As PictureBox
     Friend WithEvents quarterpb As PictureBox
     Friend WithEvents ProductControl1 As productControl
+    Friend WithEvents ProductControl2 As productControl
+    Friend WithEvents ProductControl3 As productControl
+    Friend WithEvents ProductControl4 As productControl
+    Friend WithEvents ProductControl5 As productControl
+    Friend WithEvents ProductControl6 As productControl
+    Friend WithEvents ProductControl7 As productControl
+    Friend WithEvents ProductControl8 As productControl
+    Friend WithEvents ProductControl9 As productControl
+    Friend WithEvents ProductControl10 As productControl
+    Friend WithEvents ProductControl11 As productControl
+    Friend WithEvents ProductControl12 As productControl
+    Friend WithEvents ProductControl13 As productControl
+    Friend WithEvents ProductControl14 As productControl
+    Friend WithEvents ProductControl15 As productControl
+    Friend WithEvents ProductControl16 As productControl
+    Friend WithEvents ProductControl17 As productControl
+    Friend WithEvents ProductControl18 As productControl
 End Class
