@@ -3,7 +3,7 @@
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         cs.insertQuarter()
-        TextBox1.Text = cs.total
+        TOTALLABEL.Text = cs.total
         If quarterpb.Visible = True Then
             quarterpb.Visible = False
         End If
@@ -11,7 +11,7 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         cs.insertDimes()
-        TextBox1.Text = cs.total
+        TOTALLABEL.Text = cs.total
         If dimepb.Visible = True Then
             dimepb.Visible = False
         End If
@@ -19,7 +19,7 @@
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         cs.insertDollars()
-        TextBox1.Text = cs.total
+        TOTALLABEL.Text = cs.total
         If dollarpb.Visible = True Then
             dollarpb.Visible = False
         End If
@@ -27,7 +27,7 @@
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         cs.insertPennies()
-        TextBox1.Text = cs.total
+        TOTALLABEL.Text = cs.total
         If pennypb.Visible = True Then
             pennypb.Visible = False
         End If
@@ -35,7 +35,7 @@
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         cs.insertNickles()
-        TextBox1.Text = cs.total
+        TOTALLABEL.Text = cs.total
         If nicklepb.Visible = True Then
             nicklepb.Visible = False
         End If
@@ -43,7 +43,7 @@
 
     Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
         cs.coinReturn()
-        TextBox1.Text = cs.total.ToString("c2")
+        TOTALLABEL.Text = cs.total.ToString("c2")
     End Sub
 
     Private Sub cs_coinReturnevent(d As Integer, q As Integer, dm As Integer, n As Integer, p As Integer) Handles cs.coinReturnevent
@@ -73,5 +73,20 @@
             pennypb.Visible = False
         End If
 
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        Select Case IDtextbox.Text
+            Case ProductControl1.productid
+                ProductControl1.buy()
+            Case 2
+
+            Case Else
+
+        End Select
+        TOTALLABEL.Text = cs.total.ToString("c2")
+    End Sub
+    Private Sub cs_dispense(p As Image) Handles cs.dispense
+        productpicturebox.Image = p
     End Sub
 End Class
