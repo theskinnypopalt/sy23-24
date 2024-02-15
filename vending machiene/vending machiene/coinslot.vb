@@ -39,7 +39,7 @@
         Dollars = Dollars + 1
     End Sub
     Public Sub buy(p As productControl)
-        If p.count > 0 And total > p.price Or total = p.price Then
+        If p.count > 0 And total >= p.price Then
             p.buy()
             _total = _total - p.price
             Dollars = 0

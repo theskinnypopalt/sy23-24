@@ -205,7 +205,6 @@ Partial Class Form1
         Me.productpicturebox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.productpicturebox.TabIndex = 32
         Me.productpicturebox.TabStop = False
-        Me.productpicturebox.Visible = False
         '
         'ProductControl18
         '
@@ -215,7 +214,7 @@ Partial Class Form1
         Me.ProductControl18.Name = "ProductControl18"
         Me.ProductControl18.picture = CType(resources.GetObject("ProductControl18.picture"), System.Drawing.Image)
         Me.ProductControl18.price = New Decimal(New Integer() {100, 0, 0, 131072})
-        Me.ProductControl18.productid = "C6"
+        Me.ProductControl18.productid = "c6"
         Me.ProductControl18.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl18.TabIndex = 29
         '
@@ -227,7 +226,7 @@ Partial Class Form1
         Me.ProductControl17.Name = "ProductControl17"
         Me.ProductControl17.picture = CType(resources.GetObject("ProductControl17.picture"), System.Drawing.Image)
         Me.ProductControl17.price = New Decimal(New Integer() {99, 0, 0, 131072})
-        Me.ProductControl17.productid = "C5"
+        Me.ProductControl17.productid = "c5"
         Me.ProductControl17.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl17.TabIndex = 28
         '
@@ -239,7 +238,7 @@ Partial Class Form1
         Me.ProductControl16.Name = "ProductControl16"
         Me.ProductControl16.picture = CType(resources.GetObject("ProductControl16.picture"), System.Drawing.Image)
         Me.ProductControl16.price = New Decimal(New Integer() {150, 0, 0, 131072})
-        Me.ProductControl16.productid = "C4"
+        Me.ProductControl16.productid = "c4"
         Me.ProductControl16.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl16.TabIndex = 27
         '
@@ -251,7 +250,7 @@ Partial Class Form1
         Me.ProductControl15.Name = "ProductControl15"
         Me.ProductControl15.picture = CType(resources.GetObject("ProductControl15.picture"), System.Drawing.Image)
         Me.ProductControl15.price = New Decimal(New Integer() {150, 0, 0, 131072})
-        Me.ProductControl15.productid = "C3"
+        Me.ProductControl15.productid = "c3"
         Me.ProductControl15.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl15.TabIndex = 26
         '
@@ -263,7 +262,7 @@ Partial Class Form1
         Me.ProductControl14.Name = "ProductControl14"
         Me.ProductControl14.picture = CType(resources.GetObject("ProductControl14.picture"), System.Drawing.Image)
         Me.ProductControl14.price = New Decimal(New Integer() {150, 0, 0, 131072})
-        Me.ProductControl14.productid = "C2"
+        Me.ProductControl14.productid = "c2"
         Me.ProductControl14.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl14.TabIndex = 25
         '
@@ -275,7 +274,7 @@ Partial Class Form1
         Me.ProductControl13.Name = "ProductControl13"
         Me.ProductControl13.picture = CType(resources.GetObject("ProductControl13.picture"), System.Drawing.Image)
         Me.ProductControl13.price = New Decimal(New Integer() {150, 0, 0, 131072})
-        Me.ProductControl13.productid = "C1"
+        Me.ProductControl13.productid = "c1"
         Me.ProductControl13.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl13.TabIndex = 24
         '
@@ -287,7 +286,7 @@ Partial Class Form1
         Me.ProductControl12.Name = "ProductControl12"
         Me.ProductControl12.picture = CType(resources.GetObject("ProductControl12.picture"), System.Drawing.Image)
         Me.ProductControl12.price = New Decimal(New Integer() {200, 0, 0, 131072})
-        Me.ProductControl12.productid = "B6"
+        Me.ProductControl12.productid = "b6"
         Me.ProductControl12.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl12.TabIndex = 23
         '
@@ -299,7 +298,7 @@ Partial Class Form1
         Me.ProductControl11.Name = "ProductControl11"
         Me.ProductControl11.picture = CType(resources.GetObject("ProductControl11.picture"), System.Drawing.Image)
         Me.ProductControl11.price = New Decimal(New Integer() {200, 0, 0, 131072})
-        Me.ProductControl11.productid = "B5"
+        Me.ProductControl11.productid = "b5"
         Me.ProductControl11.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl11.TabIndex = 22
         '
@@ -311,7 +310,7 @@ Partial Class Form1
         Me.ProductControl10.Name = "ProductControl10"
         Me.ProductControl10.picture = CType(resources.GetObject("ProductControl10.picture"), System.Drawing.Image)
         Me.ProductControl10.price = New Decimal(New Integer() {100, 0, 0, 131072})
-        Me.ProductControl10.productid = "B4"
+        Me.ProductControl10.productid = "b4"
         Me.ProductControl10.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl10.TabIndex = 21
         '
@@ -323,7 +322,7 @@ Partial Class Form1
         Me.ProductControl9.Name = "ProductControl9"
         Me.ProductControl9.picture = CType(resources.GetObject("ProductControl9.picture"), System.Drawing.Image)
         Me.ProductControl9.price = New Decimal(New Integer() {100, 0, 0, 131072})
-        Me.ProductControl9.productid = "B3"
+        Me.ProductControl9.productid = "b3"
         Me.ProductControl9.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl9.TabIndex = 20
         '
@@ -335,7 +334,7 @@ Partial Class Form1
         Me.ProductControl8.Name = "ProductControl8"
         Me.ProductControl8.picture = CType(resources.GetObject("ProductControl8.picture"), System.Drawing.Image)
         Me.ProductControl8.price = New Decimal(New Integer() {200, 0, 0, 131072})
-        Me.ProductControl8.productid = "B2"
+        Me.ProductControl8.productid = "b2"
         Me.ProductControl8.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl8.TabIndex = 19
         '
@@ -347,7 +346,7 @@ Partial Class Form1
         Me.ProductControl7.Name = "ProductControl7"
         Me.ProductControl7.picture = CType(resources.GetObject("ProductControl7.picture"), System.Drawing.Image)
         Me.ProductControl7.price = New Decimal(New Integer() {200, 0, 0, 131072})
-        Me.ProductControl7.productid = "B1"
+        Me.ProductControl7.productid = "b1"
         Me.ProductControl7.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl7.TabIndex = 18
         '
@@ -359,7 +358,7 @@ Partial Class Form1
         Me.ProductControl6.Name = "ProductControl6"
         Me.ProductControl6.picture = CType(resources.GetObject("ProductControl6.picture"), System.Drawing.Image)
         Me.ProductControl6.price = New Decimal(New Integer() {200, 0, 0, 131072})
-        Me.ProductControl6.productid = "A6"
+        Me.ProductControl6.productid = "a6"
         Me.ProductControl6.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl6.TabIndex = 17
         '
@@ -371,7 +370,7 @@ Partial Class Form1
         Me.ProductControl5.Name = "ProductControl5"
         Me.ProductControl5.picture = CType(resources.GetObject("ProductControl5.picture"), System.Drawing.Image)
         Me.ProductControl5.price = New Decimal(New Integer() {200, 0, 0, 131072})
-        Me.ProductControl5.productid = "A5"
+        Me.ProductControl5.productid = "a5"
         Me.ProductControl5.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl5.TabIndex = 16
         '
@@ -383,7 +382,7 @@ Partial Class Form1
         Me.ProductControl4.Name = "ProductControl4"
         Me.ProductControl4.picture = CType(resources.GetObject("ProductControl4.picture"), System.Drawing.Image)
         Me.ProductControl4.price = New Decimal(New Integer() {150, 0, 0, 131072})
-        Me.ProductControl4.productid = "A4"
+        Me.ProductControl4.productid = "a4"
         Me.ProductControl4.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl4.TabIndex = 15
         '
@@ -395,7 +394,7 @@ Partial Class Form1
         Me.ProductControl3.Name = "ProductControl3"
         Me.ProductControl3.picture = CType(resources.GetObject("ProductControl3.picture"), System.Drawing.Image)
         Me.ProductControl3.price = New Decimal(New Integer() {50, 0, 0, 131072})
-        Me.ProductControl3.productid = "A3"
+        Me.ProductControl3.productid = "a3"
         Me.ProductControl3.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl3.TabIndex = 14
         '
@@ -407,7 +406,7 @@ Partial Class Form1
         Me.ProductControl2.Name = "ProductControl2"
         Me.ProductControl2.picture = CType(resources.GetObject("ProductControl2.picture"), System.Drawing.Image)
         Me.ProductControl2.price = New Decimal(New Integer() {150, 0, 0, 131072})
-        Me.ProductControl2.productid = "A2"
+        Me.ProductControl2.productid = "a2"
         Me.ProductControl2.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl2.TabIndex = 13
         '
@@ -419,7 +418,7 @@ Partial Class Form1
         Me.ProductControl1.Name = "ProductControl1"
         Me.ProductControl1.picture = CType(resources.GetObject("ProductControl1.picture"), System.Drawing.Image)
         Me.ProductControl1.price = New Decimal(New Integer() {150, 0, 0, 131072})
-        Me.ProductControl1.productid = "A1"
+        Me.ProductControl1.productid = "a1"
         Me.ProductControl1.Size = New System.Drawing.Size(122, 83)
         Me.ProductControl1.TabIndex = 12
         '
