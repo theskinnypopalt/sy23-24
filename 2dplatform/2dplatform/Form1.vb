@@ -1,7 +1,7 @@
 ﻿Public Class Form1
     Dim movespeed As Integer = 15
     Dim isjumping As Boolean
-    Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+    Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
         Select Case e.KeyCode
             Case Keys.Right
                 tmrright.Start()
@@ -11,13 +11,25 @@
                 tmrup.Start()
                 isjumping = True
         End Select
+        If Keys.Right.Down = True And picplayer.Bounds.IntersectsWith(rightboundry.Bounds) Then
+            tmrright.Stop()
+        End If
+        If Keys.Left.Down = True And picplayer.Bounds.IntersectsWith(leftboundry.Bounds) Then
+            tmrleft.Stop()
+        End If
+        If Keys.Right.Down = True And Not picplayer.Bounds.IntersectsWith(rightboundry.Bounds) Then
+            tmrright.Start()
+        End If
+        If Keys.Left.Down = True And Not picplayer.Bounds.IntersectsWith(rightboundry.Bounds) Then
+            tmrleft.Start()
+        End If
     End Sub
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles tmrright.Tick
         picplayer.Left += movespeed
     End Sub
 
-    Private Sub Form1_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
+    Private Sub Form1_KeyUp(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyUp
         Select Case e.KeyCode
             Case Keys.Right
                 tmrright.Stop()
@@ -39,6 +51,7 @@
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tmrgamelogic.Start()
+        TextBox1.Select()
     End Sub
 
     Private Sub tmrgamelogic_Tick(sender As Object, e As EventArgs) Handles tmrgamelogic.Tick
@@ -58,6 +71,12 @@
                 End If
             End If
         Next
+        If picplayer.Bounds.IntersectsWith(topboundry.Bounds) Then
+            tmrgravity.Start()
+        End If
+        If picplayer.Bounds.IntersectsWith(rightboundry.Bounds) Then
+            tmrright.Stop()
+        End If
     End Sub
 
     Private Sub tmrgravity_Tick(sender As Object, e As EventArgs) Handles tmrgravity.Tick
