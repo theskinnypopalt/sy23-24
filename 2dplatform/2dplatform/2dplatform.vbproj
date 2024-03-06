@@ -80,16 +80,16 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="level2.Designer.vb">
+      <DependentUpon>level2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="level2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Mover.Designer.vb">
       <DependentUpon>Mover.vb</DependentUpon>
     </Compile>
     <Compile Include="Mover.vb">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="moverupdown.Designer.vb">
-      <DependentUpon>moverupdown.vb</DependentUpon>
-    </Compile>
-    <Compile Include="moverupdown.vb">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -112,11 +112,11 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="level2.resx">
+      <DependentUpon>level2.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Mover.resx">
       <DependentUpon>Mover.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="moverupdown.resx">
-      <DependentUpon>moverupdown.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

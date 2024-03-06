@@ -1,6 +1,7 @@
 ﻿Public Class Form1
     Dim movespeed As Integer = 15
     Dim isjumping As Boolean
+    Dim score As Integer
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
         Select Case e.KeyCode
             Case Keys.Right
@@ -76,6 +77,45 @@
         End If
         If picplayer.Bounds.IntersectsWith(rightboundry.Bounds) Then
             tmrright.Stop()
+        End If
+        If picplayer.Bounds.IntersectsWith(leftboundry.Bounds) Then
+            tmrleft.Stop()
+        End If
+        If picplayer.Bounds.IntersectsWith(coin1.Bounds) And coin1.Visible = True Then
+            score = score + 1
+            scoretb.Text = score
+            coin1.Visible = False
+        End If
+        If picplayer.Bounds.IntersectsWith(coin2.Bounds) And coin2.Visible = True Then
+            score = score + 1
+            scoretb.Text = score
+            coin2.Visible = False
+        End If
+        If picplayer.Bounds.IntersectsWith(coin3.Bounds) And coin3.Visible = True Then
+            score = score + 1
+            scoretb.Text = score
+            coin3.Visible = False
+        End If
+        If picplayer.Bounds.IntersectsWith(coin4.Bounds) And coin4.Visible = True Then
+            score = score + 1
+            scoretb.Text = score
+            coin4.Visible = False
+        End If
+        If picplayer.Bounds.IntersectsWith(coin5.Bounds) And coin5.Visible = True Then
+            score = score + 1
+            scoretb.Text = score
+            coin5.Visible = False
+        End If
+        If picplayer.Bounds.IntersectsWith(coin6.Bounds) And coin6.Visible = True Then
+            score = score + 1
+            scoretb.Text = score
+            coin6.Visible = False
+        End If
+        If nextlevel.Visible = True And picplayer.Bounds.IntersectsWith(nextlevel.Bounds) Then
+            level2.ShowDialog()
+        End If
+        If picplayer.Bounds.IntersectsWith(wizardpb.Bounds) And score < 6 Then
+
         End If
     End Sub
 
