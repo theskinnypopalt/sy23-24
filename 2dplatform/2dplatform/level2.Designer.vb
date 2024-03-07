@@ -36,12 +36,20 @@ Partial Class level2
         Me.topboundry = New System.Windows.Forms.PictureBox()
         Me.rightboundry = New System.Windows.Forms.PictureBox()
         Me.leftboundry = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
         CType(Me.picground, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picair, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picplayer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.topboundry, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.rightboundry, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.leftboundry, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picground
@@ -125,6 +133,46 @@ Partial Class level2
         Me.leftboundry.TabIndex = 6
         Me.leftboundry.TabStop = False
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.Color.Gold
+        Me.PictureBox1.Location = New System.Drawing.Point(215, 424)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(109, 15)
+        Me.PictureBox1.TabIndex = 7
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Tag = "bound"
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.Gold
+        Me.PictureBox2.Location = New System.Drawing.Point(418, 331)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(109, 15)
+        Me.PictureBox2.TabIndex = 8
+        Me.PictureBox2.TabStop = False
+        Me.PictureBox2.Tag = "bound"
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.BackColor = System.Drawing.Color.Gold
+        Me.PictureBox3.Location = New System.Drawing.Point(418, 136)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(109, 15)
+        Me.PictureBox3.TabIndex = 9
+        Me.PictureBox3.TabStop = False
+        Me.PictureBox3.Tag = "bound"
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.BackColor = System.Drawing.Color.Gold
+        Me.PictureBox4.Location = New System.Drawing.Point(215, 245)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(109, 15)
+        Me.PictureBox4.TabIndex = 10
+        Me.PictureBox4.TabStop = False
+        Me.PictureBox4.Tag = "bound"
+        '
         'level2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -132,7 +180,11 @@ Partial Class level2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1090, 653)
+        Me.Controls.Add(Me.PictureBox4)
+        Me.Controls.Add(Me.PictureBox3)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.picplayer)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.rightboundry)
         Me.Controls.Add(Me.topboundry)
         Me.Controls.Add(Me.leftboundry)
@@ -147,6 +199,10 @@ Partial Class level2
         CType(Me.topboundry, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.rightboundry, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.leftboundry, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -164,4 +220,8 @@ Partial Class level2
     Friend WithEvents topboundry As PictureBox
     Friend WithEvents rightboundry As PictureBox
     Friend WithEvents leftboundry As PictureBox
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox4 As PictureBox
 End Class
