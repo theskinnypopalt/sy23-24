@@ -55,8 +55,8 @@ Partial Class Form1
         Me.Mover4 = New _2dplatform.Mover()
         Me.Mover3 = New _2dplatform.Mover()
         Me.wizardpb = New System.Windows.Forms.PictureBox()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.PictureBox6 = New System.Windows.Forms.PictureBox()
+        Me.talktb = New System.Windows.Forms.Label()
+        Me.talkpb = New System.Windows.Forms.PictureBox()
         CType(Me.picplayer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picair, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picground, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -76,7 +76,7 @@ Partial Class Form1
         CType(Me.coin5, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.coin6, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.wizardpb, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.talkpb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picplayer
@@ -129,7 +129,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox1.Location = New System.Drawing.Point(627, 99)
+        Me.PictureBox1.Location = New System.Drawing.Point(537, 99)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(112, 10)
         Me.PictureBox1.TabIndex = 3
@@ -139,7 +139,7 @@ Partial Class Form1
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox2.Location = New System.Drawing.Point(231, 399)
+        Me.PictureBox2.Location = New System.Drawing.Point(141, 399)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(112, 10)
         Me.PictureBox2.TabIndex = 4
@@ -149,7 +149,7 @@ Partial Class Form1
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox3.Location = New System.Drawing.Point(579, 446)
+        Me.PictureBox3.Location = New System.Drawing.Point(639, 376)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(112, 10)
         Me.PictureBox3.TabIndex = 5
@@ -159,7 +159,7 @@ Partial Class Form1
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox4.Location = New System.Drawing.Point(887, 348)
+        Me.PictureBox4.Location = New System.Drawing.Point(837, 288)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(112, 10)
         Me.PictureBox4.TabIndex = 6
@@ -378,27 +378,30 @@ Partial Class Form1
         Me.wizardpb.TabIndex = 25
         Me.wizardpb.TabStop = False
         '
-        'Label2
+        'talktb
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.BackColor = System.Drawing.Color.Transparent
-        Me.Label2.Image = CType(resources.GetObject("Label2.Image"), System.Drawing.Image)
-        Me.Label2.Location = New System.Drawing.Point(763, 59)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(10, 16)
-        Me.Label2.TabIndex = 26
-        Me.Label2.Text = " "
+        Me.talktb.AutoSize = True
+        Me.talktb.BackColor = System.Drawing.Color.Transparent
+        Me.talktb.Font = New System.Drawing.Font("Monotype Corsiva", 7.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.talktb.Image = CType(resources.GetObject("talktb.Image"), System.Drawing.Image)
+        Me.talktb.Location = New System.Drawing.Point(763, 59)
+        Me.talktb.Name = "talktb"
+        Me.talktb.Size = New System.Drawing.Size(11, 15)
+        Me.talktb.TabIndex = 26
+        Me.talktb.Text = " "
+        Me.talktb.Visible = False
         '
-        'PictureBox6
+        'talkpb
         '
-        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox6.Image = CType(resources.GetObject("PictureBox6.Image"), System.Drawing.Image)
-        Me.PictureBox6.Location = New System.Drawing.Point(705, 24)
-        Me.PictureBox6.Name = "PictureBox6"
-        Me.PictureBox6.Size = New System.Drawing.Size(159, 95)
-        Me.PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox6.TabIndex = 27
-        Me.PictureBox6.TabStop = False
+        Me.talkpb.BackColor = System.Drawing.Color.Transparent
+        Me.talkpb.Image = CType(resources.GetObject("talkpb.Image"), System.Drawing.Image)
+        Me.talkpb.Location = New System.Drawing.Point(705, 24)
+        Me.talkpb.Name = "talkpb"
+        Me.talkpb.Size = New System.Drawing.Size(159, 95)
+        Me.talkpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.talkpb.TabIndex = 27
+        Me.talkpb.TabStop = False
+        Me.talkpb.Visible = False
         '
         'Form1
         '
@@ -407,7 +410,7 @@ Partial Class Form1
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1087, 653)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.talktb)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.wizardpb)
         Me.Controls.Add(Me.picplayer)
@@ -433,7 +436,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Mover3)
         Me.Controls.Add(Me.picground)
         Me.Controls.Add(Me.nextlevel)
-        Me.Controls.Add(Me.PictureBox6)
+        Me.Controls.Add(Me.talkpb)
         Me.Controls.Add(Me.picair)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -456,7 +459,7 @@ Partial Class Form1
         CType(Me.coin5, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.coin6, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.wizardpb, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.talkpb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -493,6 +496,6 @@ Partial Class Form1
     Friend WithEvents scoretb As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents wizardpb As PictureBox
-    Friend WithEvents Label2 As Label
-    Friend WithEvents PictureBox6 As PictureBox
+    Friend WithEvents talktb As Label
+    Friend WithEvents talkpb As PictureBox
 End Class

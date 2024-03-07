@@ -53,6 +53,18 @@
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tmrgamelogic.Start()
         TextBox1.Select()
+        coin1.Visible = True
+        coin2.Visible = True
+        coin3.Visible = True
+        coin4.Visible = True
+        coin5.Visible = True
+        coin6.Visible = True
+        nextlevel.Visible = False
+        wizardpb.Visible = True
+        talkpb.Visible = False
+        talktb.Visible = False
+        talktb.Text = ""
+        score = 0
     End Sub
 
     Private Sub tmrgamelogic_Tick(sender As Object, e As EventArgs) Handles tmrgamelogic.Tick
@@ -115,7 +127,14 @@
             level2.ShowDialog()
         End If
         If picplayer.Bounds.IntersectsWith(wizardpb.Bounds) And score < 6 Then
-
+            talkpb.Visible = True
+            talktb.Visible = True
+            talktb.Text = "YOU MUST BRING ME 6 COINS TO PASS!"
+        ElseIf picplayer.Bounds.IntersectsWith(wizardpb.Bounds) And score = 6 Then
+            talkpb.Visible = True
+            talktb.Visible = True
+            talktb.Text = "YOU SHALL PASS"
+            nextlevel.Visible = True
         End If
     End Sub
 
