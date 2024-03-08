@@ -89,6 +89,26 @@ Public Class level2
         If picplayer.Bounds.IntersectsWith(leftboundry.Bounds) Then
             tmrleft.Stop()
         End If
+        If picplayer.Bounds.IntersectsWith(coin1.Bounds) And coin1.Visible = True Then
+            coin1.Visible = False
+            score = score + 1
+            scoretb.Text = score
+        End If
+        If picplayer.Bounds.IntersectsWith(coin2.Bounds) And coin2.Visible = True Then
+            coin2.Visible = False
+            score = score + 1
+            scoretb.Text = score
+        End If
+        If picplayer.Bounds.IntersectsWith(coin3.Bounds) And coin3.Visible = True Then
+            coin3.Visible = False
+            score = score + 1
+            scoretb.Text = score
+        End If
+        If picplayer.Bounds.IntersectsWith(coin4.Bounds) And coin4.Visible = True Then
+            coin4.Visible = False
+            score = score + 1
+            scoretb.Text = score
+        End If
     End Sub
 
     Private Sub tmrgravity_Tick(sender As Object, e As EventArgs) Handles tmrgravity.Tick

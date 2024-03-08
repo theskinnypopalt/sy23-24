@@ -40,6 +40,15 @@ Partial Class level2
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox5 = New System.Windows.Forms.PictureBox()
+        Me.coin1 = New System.Windows.Forms.PictureBox()
+        Me.coin4 = New System.Windows.Forms.PictureBox()
+        Me.coin2 = New System.Windows.Forms.PictureBox()
+        Me.coin3 = New System.Windows.Forms.PictureBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.scoretb = New System.Windows.Forms.Label()
+        Me.Mover1 = New _2dplatform.Mover()
+        Me.Mover2 = New _2dplatform.Mover()
         CType(Me.picground, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picair, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picplayer, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -50,6 +59,11 @@ Partial Class level2
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.coin1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.coin4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.coin2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.coin3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picground
@@ -73,7 +87,7 @@ Partial Class level2
         'picplayer
         '
         Me.picplayer.BackColor = System.Drawing.Color.Red
-        Me.picplayer.Location = New System.Drawing.Point(22, 482)
+        Me.picplayer.Location = New System.Drawing.Point(22, 66)
         Me.picplayer.Name = "picplayer"
         Me.picplayer.Size = New System.Drawing.Size(33, 33)
         Me.picplayer.TabIndex = 2
@@ -136,7 +150,7 @@ Partial Class level2
         'PictureBox1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox1.Location = New System.Drawing.Point(215, 424)
+        Me.PictureBox1.Location = New System.Drawing.Point(462, 333)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(109, 15)
         Me.PictureBox1.TabIndex = 7
@@ -146,7 +160,7 @@ Partial Class level2
         'PictureBox2
         '
         Me.PictureBox2.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox2.Location = New System.Drawing.Point(418, 331)
+        Me.PictureBox2.Location = New System.Drawing.Point(589, 160)
         Me.PictureBox2.Name = "PictureBox2"
         Me.PictureBox2.Size = New System.Drawing.Size(109, 15)
         Me.PictureBox2.TabIndex = 8
@@ -156,7 +170,7 @@ Partial Class level2
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox3.Location = New System.Drawing.Point(418, 136)
+        Me.PictureBox3.Location = New System.Drawing.Point(899, 126)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(109, 15)
         Me.PictureBox3.TabIndex = 9
@@ -166,12 +180,116 @@ Partial Class level2
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox4.Location = New System.Drawing.Point(215, 245)
+        Me.PictureBox4.Location = New System.Drawing.Point(333, 264)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(109, 15)
         Me.PictureBox4.TabIndex = 10
         Me.PictureBox4.TabStop = False
         Me.PictureBox4.Tag = "bound"
+        '
+        'PictureBox5
+        '
+        Me.PictureBox5.BackColor = System.Drawing.Color.SaddleBrown
+        Me.PictureBox5.Location = New System.Drawing.Point(12, 105)
+        Me.PictureBox5.Name = "PictureBox5"
+        Me.PictureBox5.Size = New System.Drawing.Size(265, 30)
+        Me.PictureBox5.TabIndex = 13
+        Me.PictureBox5.TabStop = False
+        Me.PictureBox5.Tag = "bound"
+        '
+        'coin1
+        '
+        Me.coin1.BackColor = System.Drawing.Color.Transparent
+        Me.coin1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.coin1.Image = CType(resources.GetObject("coin1.Image"), System.Drawing.Image)
+        Me.coin1.Location = New System.Drawing.Point(401, 66)
+        Me.coin1.Name = "coin1"
+        Me.coin1.Size = New System.Drawing.Size(34, 29)
+        Me.coin1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.coin1.TabIndex = 14
+        Me.coin1.TabStop = False
+        '
+        'coin4
+        '
+        Me.coin4.BackColor = System.Drawing.Color.Transparent
+        Me.coin4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.coin4.Image = CType(resources.GetObject("coin4.Image"), System.Drawing.Image)
+        Me.coin4.Location = New System.Drawing.Point(504, 298)
+        Me.coin4.Name = "coin4"
+        Me.coin4.Size = New System.Drawing.Size(34, 29)
+        Me.coin4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.coin4.TabIndex = 15
+        Me.coin4.TabStop = False
+        '
+        'coin2
+        '
+        Me.coin2.BackColor = System.Drawing.Color.Transparent
+        Me.coin2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.coin2.Image = CType(resources.GetObject("coin2.Image"), System.Drawing.Image)
+        Me.coin2.Location = New System.Drawing.Point(636, 125)
+        Me.coin2.Name = "coin2"
+        Me.coin2.Size = New System.Drawing.Size(34, 29)
+        Me.coin2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.coin2.TabIndex = 16
+        Me.coin2.TabStop = False
+        '
+        'coin3
+        '
+        Me.coin3.BackColor = System.Drawing.Color.Transparent
+        Me.coin3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.coin3.Image = CType(resources.GetObject("coin3.Image"), System.Drawing.Image)
+        Me.coin3.Location = New System.Drawing.Point(795, 177)
+        Me.coin3.Name = "coin3"
+        Me.coin3.Size = New System.Drawing.Size(34, 29)
+        Me.coin3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.coin3.TabIndex = 17
+        Me.coin3.TabStop = False
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(837, 506)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(174, 46)
+        Me.Label1.TabIndex = 18
+        Me.Label1.Text = "SCORE:"
+        '
+        'scoretb
+        '
+        Me.scoretb.AutoSize = True
+        Me.scoretb.BackColor = System.Drawing.Color.Transparent
+        Me.scoretb.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.scoretb.Location = New System.Drawing.Point(998, 506)
+        Me.scoretb.Name = "scoretb"
+        Me.scoretb.Size = New System.Drawing.Size(42, 46)
+        Me.scoretb.TabIndex = 19
+        Me.scoretb.Text = "0"
+        '
+        'Mover1
+        '
+        Me.Mover1.BackColor = System.Drawing.Color.Transparent
+        Me.Mover1.ForeColor = System.Drawing.Color.Transparent
+        Me.Mover1.interval = 500
+        Me.Mover1.Location = New System.Drawing.Point(759, 136)
+        Me.Mover1.Name = "Mover1"
+        Me.Mover1.Size = New System.Drawing.Size(150, 150)
+        Me.Mover1.speed = 10
+        Me.Mover1.sprite = Me.PictureBox3
+        Me.Mover1.TabIndex = 11
+        '
+        'Mover2
+        '
+        Me.Mover2.BackColor = System.Drawing.Color.Transparent
+        Me.Mover2.ForeColor = System.Drawing.Color.Transparent
+        Me.Mover2.interval = 500
+        Me.Mover2.Location = New System.Drawing.Point(303, 219)
+        Me.Mover2.Name = "Mover2"
+        Me.Mover2.Size = New System.Drawing.Size(43, 41)
+        Me.Mover2.speed = 5
+        Me.Mover2.sprite = Me.PictureBox4
+        Me.Mover2.TabIndex = 12
         '
         'level2
         '
@@ -180,17 +298,26 @@ Partial Class level2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1090, 653)
+        Me.Controls.Add(Me.scoretb)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.coin3)
+        Me.Controls.Add(Me.coin2)
+        Me.Controls.Add(Me.coin4)
+        Me.Controls.Add(Me.coin1)
+        Me.Controls.Add(Me.picplayer)
+        Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.picplayer)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.rightboundry)
         Me.Controls.Add(Me.topboundry)
         Me.Controls.Add(Me.leftboundry)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.picair)
         Me.Controls.Add(Me.picground)
+        Me.Controls.Add(Me.Mover1)
+        Me.Controls.Add(Me.Mover2)
+        Me.Controls.Add(Me.picair)
         Me.Name = "level2"
         Me.Text = "level2"
         CType(Me.picground, System.ComponentModel.ISupportInitialize).EndInit()
@@ -203,6 +330,11 @@ Partial Class level2
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.coin1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.coin4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.coin2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.coin3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -224,4 +356,13 @@ Partial Class level2
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents PictureBox4 As PictureBox
+    Friend WithEvents Mover1 As Mover
+    Friend WithEvents Mover2 As Mover
+    Friend WithEvents PictureBox5 As PictureBox
+    Friend WithEvents coin1 As PictureBox
+    Friend WithEvents coin4 As PictureBox
+    Friend WithEvents coin2 As PictureBox
+    Friend WithEvents coin3 As PictureBox
+    Friend WithEvents Label1 As Label
+    Friend WithEvents scoretb As Label
 End Class
