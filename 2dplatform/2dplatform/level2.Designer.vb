@@ -49,6 +49,13 @@ Partial Class level2
         Me.scoretb = New System.Windows.Forms.Label()
         Me.Mover1 = New _2dplatform.Mover()
         Me.Mover2 = New _2dplatform.Mover()
+        Me.nextlevelpb = New System.Windows.Forms.PictureBox()
+        Me.spikes1 = New System.Windows.Forms.PictureBox()
+        Me.spikes2 = New System.Windows.Forms.PictureBox()
+        Me.spikes6 = New System.Windows.Forms.PictureBox()
+        Me.spikes5 = New System.Windows.Forms.PictureBox()
+        Me.spikes4 = New System.Windows.Forms.PictureBox()
+        Me.spikes3 = New System.Windows.Forms.PictureBox()
         CType(Me.picground, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picair, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picplayer, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -64,6 +71,13 @@ Partial Class level2
         CType(Me.coin4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.coin2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.coin3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.nextlevelpb, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.spikes1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.spikes2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.spikes6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.spikes5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.spikes4, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.spikes3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picground
@@ -170,7 +184,7 @@ Partial Class level2
         'PictureBox3
         '
         Me.PictureBox3.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox3.Location = New System.Drawing.Point(899, 126)
+        Me.PictureBox3.Location = New System.Drawing.Point(749, 166)
         Me.PictureBox3.Name = "PictureBox3"
         Me.PictureBox3.Size = New System.Drawing.Size(109, 15)
         Me.PictureBox3.TabIndex = 9
@@ -180,7 +194,7 @@ Partial Class level2
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.Gold
-        Me.PictureBox4.Location = New System.Drawing.Point(333, 264)
+        Me.PictureBox4.Location = New System.Drawing.Point(308, 264)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(109, 15)
         Me.PictureBox4.TabIndex = 10
@@ -214,7 +228,7 @@ Partial Class level2
         Me.coin4.BackColor = System.Drawing.Color.Transparent
         Me.coin4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.coin4.Image = CType(resources.GetObject("coin4.Image"), System.Drawing.Image)
-        Me.coin4.Location = New System.Drawing.Point(504, 298)
+        Me.coin4.Location = New System.Drawing.Point(845, 414)
         Me.coin4.Name = "coin4"
         Me.coin4.Size = New System.Drawing.Size(34, 29)
         Me.coin4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -291,6 +305,83 @@ Partial Class level2
         Me.Mover2.sprite = Me.PictureBox4
         Me.Mover2.TabIndex = 12
         '
+        'nextlevelpb
+        '
+        Me.nextlevelpb.BackColor = System.Drawing.Color.Transparent
+        Me.nextlevelpb.Image = CType(resources.GetObject("nextlevelpb.Image"), System.Drawing.Image)
+        Me.nextlevelpb.Location = New System.Drawing.Point(46, 414)
+        Me.nextlevelpb.Name = "nextlevelpb"
+        Me.nextlevelpb.Size = New System.Drawing.Size(56, 100)
+        Me.nextlevelpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.nextlevelpb.TabIndex = 20
+        Me.nextlevelpb.TabStop = False
+        '
+        'spikes1
+        '
+        Me.spikes1.BackColor = System.Drawing.Color.Transparent
+        Me.spikes1.Image = CType(resources.GetObject("spikes1.Image"), System.Drawing.Image)
+        Me.spikes1.Location = New System.Drawing.Point(462, 287)
+        Me.spikes1.Name = "spikes1"
+        Me.spikes1.Size = New System.Drawing.Size(100, 50)
+        Me.spikes1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.spikes1.TabIndex = 21
+        Me.spikes1.TabStop = False
+        '
+        'spikes2
+        '
+        Me.spikes2.BackColor = System.Drawing.Color.Transparent
+        Me.spikes2.Image = CType(resources.GetObject("spikes2.Image"), System.Drawing.Image)
+        Me.spikes2.Location = New System.Drawing.Point(167, 464)
+        Me.spikes2.Name = "spikes2"
+        Me.spikes2.Size = New System.Drawing.Size(100, 50)
+        Me.spikes2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.spikes2.TabIndex = 22
+        Me.spikes2.TabStop = False
+        '
+        'spikes6
+        '
+        Me.spikes6.BackColor = System.Drawing.Color.Transparent
+        Me.spikes6.Image = CType(resources.GetObject("spikes6.Image"), System.Drawing.Image)
+        Me.spikes6.Location = New System.Drawing.Point(542, 464)
+        Me.spikes6.Name = "spikes6"
+        Me.spikes6.Size = New System.Drawing.Size(100, 50)
+        Me.spikes6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.spikes6.TabIndex = 23
+        Me.spikes6.TabStop = False
+        '
+        'spikes5
+        '
+        Me.spikes5.BackColor = System.Drawing.Color.Transparent
+        Me.spikes5.Image = CType(resources.GetObject("spikes5.Image"), System.Drawing.Image)
+        Me.spikes5.Location = New System.Drawing.Point(448, 464)
+        Me.spikes5.Name = "spikes5"
+        Me.spikes5.Size = New System.Drawing.Size(100, 50)
+        Me.spikes5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.spikes5.TabIndex = 24
+        Me.spikes5.TabStop = False
+        '
+        'spikes4
+        '
+        Me.spikes4.BackColor = System.Drawing.Color.Transparent
+        Me.spikes4.Image = CType(resources.GetObject("spikes4.Image"), System.Drawing.Image)
+        Me.spikes4.Location = New System.Drawing.Point(358, 464)
+        Me.spikes4.Name = "spikes4"
+        Me.spikes4.Size = New System.Drawing.Size(100, 50)
+        Me.spikes4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.spikes4.TabIndex = 25
+        Me.spikes4.TabStop = False
+        '
+        'spikes3
+        '
+        Me.spikes3.BackColor = System.Drawing.Color.Transparent
+        Me.spikes3.Image = CType(resources.GetObject("spikes3.Image"), System.Drawing.Image)
+        Me.spikes3.Location = New System.Drawing.Point(262, 464)
+        Me.spikes3.Name = "spikes3"
+        Me.spikes3.Size = New System.Drawing.Size(100, 50)
+        Me.spikes3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.spikes3.TabIndex = 26
+        Me.spikes3.TabStop = False
+        '
         'level2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -298,18 +389,25 @@ Partial Class level2
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1090, 653)
+        Me.Controls.Add(Me.picplayer)
+        Me.Controls.Add(Me.spikes3)
+        Me.Controls.Add(Me.spikes4)
+        Me.Controls.Add(Me.spikes5)
+        Me.Controls.Add(Me.spikes6)
+        Me.Controls.Add(Me.spikes2)
+        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.spikes1)
+        Me.Controls.Add(Me.nextlevelpb)
         Me.Controls.Add(Me.scoretb)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.coin3)
         Me.Controls.Add(Me.coin2)
         Me.Controls.Add(Me.coin4)
         Me.Controls.Add(Me.coin1)
-        Me.Controls.Add(Me.picplayer)
         Me.Controls.Add(Me.PictureBox5)
         Me.Controls.Add(Me.PictureBox4)
         Me.Controls.Add(Me.PictureBox3)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.rightboundry)
         Me.Controls.Add(Me.topboundry)
         Me.Controls.Add(Me.leftboundry)
@@ -335,6 +433,13 @@ Partial Class level2
         CType(Me.coin4, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.coin2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.coin3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.nextlevelpb, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.spikes1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.spikes2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.spikes6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.spikes5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.spikes4, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.spikes3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -365,4 +470,11 @@ Partial Class level2
     Friend WithEvents coin3 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents scoretb As Label
+    Friend WithEvents nextlevelpb As PictureBox
+    Friend WithEvents spikes1 As PictureBox
+    Friend WithEvents spikes2 As PictureBox
+    Friend WithEvents spikes6 As PictureBox
+    Friend WithEvents spikes5 As PictureBox
+    Friend WithEvents spikes4 As PictureBox
+    Friend WithEvents spikes3 As PictureBox
 End Class

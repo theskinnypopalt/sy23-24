@@ -109,6 +109,14 @@ Public Class level2
             score = score + 1
             scoretb.Text = score
         End If
+        If picplayer.Bounds.IntersectsWith(nextlevelpb.Bounds) Then
+            level3.ShowDialog()
+        End If
+        If picplayer.Bounds.IntersectsWith(spikes1.Bounds) Or picplayer.Bounds.IntersectsWith(spikes2.Bounds) Or
+            picplayer.Bounds.IntersectsWith(spikes3.Bounds) Or picplayer.Bounds.IntersectsWith(spikes4.Bounds) Or
+            picplayer.Bounds.IntersectsWith(spikes5.Bounds) Or picplayer.Bounds.IntersectsWith(spikes6.Bounds) Then
+            score = score - 1
+        End If
     End Sub
 
     Private Sub tmrgravity_Tick(sender As Object, e As EventArgs) Handles tmrgravity.Tick
