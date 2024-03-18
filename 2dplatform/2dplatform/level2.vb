@@ -112,10 +112,11 @@ Public Class level2
         If picplayer.Bounds.IntersectsWith(nextlevelpb.Bounds) Then
             level3.ShowDialog()
         End If
-        If picplayer.Bounds.IntersectsWith(spikes1.Bounds) Or picplayer.Bounds.IntersectsWith(spikes2.Bounds) Or
-            picplayer.Bounds.IntersectsWith(spikes3.Bounds) Or picplayer.Bounds.IntersectsWith(spikes4.Bounds) Or
-            picplayer.Bounds.IntersectsWith(spikes5.Bounds) Or picplayer.Bounds.IntersectsWith(spikes6.Bounds) Then
+        If picplayer.Bounds.IntersectsWith(spikes1.Bounds) And score > 1 Or picplayer.Bounds.IntersectsWith(spikes2.Bounds) And score > 1 Or
+            picplayer.Bounds.IntersectsWith(spikes3.Bounds) And score > 1 Or picplayer.Bounds.IntersectsWith(spikes4.Bounds) And score > 1 Or
+            picplayer.Bounds.IntersectsWith(spikes5.Bounds) And score > 1 Or picplayer.Bounds.IntersectsWith(spikes6.Bounds) And score > 1 Then
             score = score - 1
+            picplayer.Location = New Point(22, 66)
         End If
     End Sub
 
