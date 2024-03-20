@@ -80,6 +80,12 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="mainlineform.Designer.vb">
+      <DependentUpon>mainlineform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainlineform.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -95,13 +101,37 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="STHform.Designer.vb">
+      <DependentUpon>STHform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STHform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="THform.Designer.vb">
+      <DependentUpon>THform.vb</DependentUpon>
+    </Compile>
+    <Compile Include="THform.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainlineform.resx">
+      <DependentUpon>mainlineform.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STHform.resx">
+      <DependentUpon>STHform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="THform.resx">
+      <DependentUpon>THform.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

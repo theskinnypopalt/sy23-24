@@ -22,9 +22,29 @@ Partial Class mainlineform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.SuspendLayout()
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 0
+        Me.Button1.Text = "HOME"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'mainlineform
+        '
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(1061, 587)
+        Me.Controls.Add(Me.Button1)
+        Me.Name = "mainlineform"
         Me.Text = "mainlineform"
+        Me.ResumeLayout(False)
+
     End Sub
+
+    Friend WithEvents Button1 As Button
 End Class
