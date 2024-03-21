@@ -1,9 +1,10 @@
 ﻿Public Class STHform
-    Private Sub STHform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Form1.Hide()
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles homebutton.Click
+        Form1.Show()
+        Me.Hide()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        Form1.ShowDialog()
+    Private Sub STHform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Form1.Hide()
     End Sub
 End Class

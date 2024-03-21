@@ -22,29 +22,29 @@ Partial Class THform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.homebutton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'homebutton
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Home"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.homebutton.Location = New System.Drawing.Point(12, 12)
+        Me.homebutton.Name = "homebutton"
+        Me.homebutton.Size = New System.Drawing.Size(75, 23)
+        Me.homebutton.TabIndex = 0
+        Me.homebutton.Text = "Home"
+        Me.homebutton.UseVisualStyleBackColor = True
         '
         'THform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(966, 616)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.homebutton)
         Me.Name = "THform"
         Me.Text = "THform"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents Button1 As Button
+    Friend WithEvents homebutton As Button
 End Class

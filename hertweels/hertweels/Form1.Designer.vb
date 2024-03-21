@@ -28,7 +28,7 @@ Partial Class Form1
         Me.Label2 = New System.Windows.Forms.Label()
         Me.thbutton = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.sthbutton = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
@@ -86,16 +86,16 @@ Partial Class Form1
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Treasure Hunts"
         '
-        'Button1
+        'sthbutton
         '
-        Me.Button1.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Button1.BackgroundImage = CType(resources.GetObject("Button1.BackgroundImage"), System.Drawing.Image)
-        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.Button1.Location = New System.Drawing.Point(728, 320)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(261, 117)
-        Me.Button1.TabIndex = 5
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.sthbutton.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.sthbutton.BackgroundImage = CType(resources.GetObject("sthbutton.BackgroundImage"), System.Drawing.Image)
+        Me.sthbutton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.sthbutton.Location = New System.Drawing.Point(728, 320)
+        Me.sthbutton.Name = "sthbutton"
+        Me.sthbutton.Size = New System.Drawing.Size(261, 117)
+        Me.sthbutton.TabIndex = 5
+        Me.sthbutton.UseVisualStyleBackColor = False
         '
         'Label4
         '
@@ -125,7 +125,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(1035, 547)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.sthbutton)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.thbutton)
         Me.Controls.Add(Me.Label2)
@@ -143,7 +143,7 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents thbutton As Button
     Friend WithEvents Label3 As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents sthbutton As Button
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
 End Class
