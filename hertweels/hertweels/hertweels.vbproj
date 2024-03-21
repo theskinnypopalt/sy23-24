@@ -101,6 +101,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="STH.Designer.vb">
+      <DependentUpon>STH.vb</DependentUpon>
+    </Compile>
+    <Compile Include="STH.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="STHform.Designer.vb">
       <DependentUpon>STHform.vb</DependentUpon>
     </Compile>
@@ -126,6 +132,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="STH.resx">
+      <DependentUpon>STH.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="STHform.resx">
       <DependentUpon>STHform.vb</DependentUpon>

@@ -38,7 +38,8 @@ Partial Class mainlineform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1061, 587)
+        Me.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.ClientSize = New System.Drawing.Size(1220, 646)
         Me.Controls.Add(Me.homebutton)
         Me.Name = "mainlineform"
         Me.Text = "mainlineform"

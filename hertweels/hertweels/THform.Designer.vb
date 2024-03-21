@@ -38,7 +38,8 @@ Partial Class THform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(966, 616)
+        Me.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.ClientSize = New System.Drawing.Size(1220, 646)
         Me.Controls.Add(Me.homebutton)
         Me.Name = "THform"
         Me.Text = "THform"
