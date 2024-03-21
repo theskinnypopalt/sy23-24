@@ -23,6 +23,7 @@ Partial Class STHform
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.homebutton = New System.Windows.Forms.Button()
+        Me.Sth1 = New hertweels.STH()
         Me.SuspendLayout()
         '
         'homebutton
@@ -34,6 +35,15 @@ Partial Class STHform
         Me.homebutton.Text = "HOME"
         Me.homebutton.UseVisualStyleBackColor = True
         '
+        'Sth1
+        '
+        Me.Sth1.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Sth1.Location = New System.Drawing.Point(12, 70)
+        Me.Sth1.Name = "Sth1"
+        Me.Sth1.price = 0
+        Me.Sth1.Size = New System.Drawing.Size(204, 109)
+        Me.Sth1.TabIndex = 1
+        '
         'STHform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -41,6 +51,7 @@ Partial Class STHform
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.ClientSize = New System.Drawing.Size(1220, 646)
+        Me.Controls.Add(Me.Sth1)
         Me.Controls.Add(Me.homebutton)
         Me.Name = "STHform"
         Me.Text = "STHform"
@@ -49,4 +60,5 @@ Partial Class STHform
     End Sub
 
     Friend WithEvents homebutton As Button
+    Friend WithEvents Sth1 As STH
 End Class
