@@ -155,5 +155,23 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels11.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels3.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels5.jpeg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
