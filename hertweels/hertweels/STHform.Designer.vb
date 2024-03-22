@@ -39,7 +39,7 @@ Partial Class STHform
         'Sth1
         '
         Me.Sth1.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Sth1.Location = New System.Drawing.Point(24, 62)
+        Me.Sth1.Location = New System.Drawing.Point(43, 81)
         Me.Sth1.Name = "Sth1"
         Me.Sth1.picture = CType(resources.GetObject("Sth1.picture"), System.Drawing.Image)
         Me.Sth1.price = 0

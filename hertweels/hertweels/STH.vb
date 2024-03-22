@@ -2,8 +2,7 @@
     Public Property price As Integer
     Dim total As Decimal
     Public Property picture As Image
-    Public Property name As Label
-
+    Public Property carname As String
     Private Sub quantityupdown_ValueChanged(sender As Object, e As EventArgs) Handles quantityupdown.ValueChanged
         pricelabel.Text = price * quantityupdown.Value
     End Sub
@@ -14,5 +13,6 @@
 
     Private Sub STH_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         carpb.Image = picture
+        namelabel.Text = carname
     End Sub
 End Class
