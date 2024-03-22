@@ -10,4 +10,8 @@
     Private Sub checkoutbutton_Click(sender As Object, e As EventArgs) Handles checkoutbutton.Click
 
     End Sub
+
+    Private Sub STH_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        carpb.Image = picture
+    End Sub
 End Class

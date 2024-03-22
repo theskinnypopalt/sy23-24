@@ -36,6 +36,7 @@ Partial Class STH
         Me.carpb.Location = New System.Drawing.Point(3, 3)
         Me.carpb.Name = "carpb"
         Me.carpb.Size = New System.Drawing.Size(70, 80)
+        Me.carpb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.carpb.TabIndex = 0
         Me.carpb.TabStop = False
         '

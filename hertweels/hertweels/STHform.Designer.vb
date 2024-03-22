@@ -22,6 +22,7 @@ Partial Class STHform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(STHform))
         Me.homebutton = New System.Windows.Forms.Button()
         Me.Sth1 = New hertweels.STH()
         Me.SuspendLayout()
@@ -38,8 +39,9 @@ Partial Class STHform
         'Sth1
         '
         Me.Sth1.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Sth1.Location = New System.Drawing.Point(12, 70)
+        Me.Sth1.Location = New System.Drawing.Point(24, 62)
         Me.Sth1.Name = "Sth1"
+        Me.Sth1.picture = CType(resources.GetObject("Sth1.picture"), System.Drawing.Image)
         Me.Sth1.price = 0
         Me.Sth1.Size = New System.Drawing.Size(204, 109)
         Me.Sth1.TabIndex = 1
