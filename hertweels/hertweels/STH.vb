@@ -2,6 +2,7 @@
     Public Property price As Integer
     Dim total As Decimal
     Public Property picture As Image
+    Public Property name As Label
 
     Private Sub quantityupdown_ValueChanged(sender As Object, e As EventArgs) Handles quantityupdown.ValueChanged
         pricelabel.Text = price * quantityupdown.Value
