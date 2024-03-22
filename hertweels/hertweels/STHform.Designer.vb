@@ -39,11 +39,12 @@ Partial Class STHform
         'Sth1
         '
         Me.Sth1.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Sth1.carname = "Mercedes-Benz 300SL"
         Me.Sth1.Location = New System.Drawing.Point(43, 81)
         Me.Sth1.Name = "Sth1"
         Me.Sth1.picture = CType(resources.GetObject("Sth1.picture"), System.Drawing.Image)
-        Me.Sth1.price = 0
-        Me.Sth1.Size = New System.Drawing.Size(204, 109)
+        Me.Sth1.price = 200
+        Me.Sth1.Size = New System.Drawing.Size(269, 109)
         Me.Sth1.TabIndex = 1
         '
         'STHform
