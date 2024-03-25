@@ -53,9 +53,11 @@ Partial Class STH
         'quantityupdown
         '
         Me.quantityupdown.Location = New System.Drawing.Point(79, 26)
+        Me.quantityupdown.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.quantityupdown.Name = "quantityupdown"
         Me.quantityupdown.Size = New System.Drawing.Size(91, 22)
         Me.quantityupdown.TabIndex = 2
+        Me.quantityupdown.Value = New Decimal(New Integer() {1, 0, 0, 0})
         '
         'namelabel
         '
@@ -98,7 +100,7 @@ Partial Class STH
         Me.Controls.Add(Me.pricelabel)
         Me.Controls.Add(Me.carpb)
         Me.Name = "STH"
-        Me.Size = New System.Drawing.Size(271, 109)
+        Me.Size = New System.Drawing.Size(401, 109)
         CType(Me.carpb, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.quantityupdown, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
