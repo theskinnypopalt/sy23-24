@@ -32,6 +32,7 @@ Partial Class STHform
         Me.Sth6 = New hertweels.STH()
         Me.Sth7 = New hertweels.STH()
         Me.Sth8 = New hertweels.STH()
+        Me.Sth9 = New hertweels.STH()
         Me.SuspendLayout()
         '
         'homebutton
@@ -131,6 +132,17 @@ Partial Class STHform
         Me.Sth8.Size = New System.Drawing.Size(294, 109)
         Me.Sth8.TabIndex = 8
         '
+        'Sth9
+        '
+        Me.Sth9.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Sth9.carname = "Lamborghini Muria"
+        Me.Sth9.Location = New System.Drawing.Point(12, 395)
+        Me.Sth9.Name = "Sth9"
+        Me.Sth9.picture = CType(resources.GetObject("Sth9.picture"), System.Drawing.Image)
+        Me.Sth9.price = 80
+        Me.Sth9.Size = New System.Drawing.Size(300, 109)
+        Me.Sth9.TabIndex = 9
+        '
         'STHform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -138,6 +150,7 @@ Partial Class STHform
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.ClientSize = New System.Drawing.Size(1220, 646)
+        Me.Controls.Add(Me.Sth9)
         Me.Controls.Add(Me.Sth8)
         Me.Controls.Add(Me.Sth7)
         Me.Controls.Add(Me.Sth6)
@@ -162,4 +175,5 @@ Partial Class STHform
     Friend WithEvents Sth6 As STH
     Friend WithEvents Sth7 As STH
     Friend WithEvents Sth8 As STH
+    Friend WithEvents Sth9 As STH
 End Class

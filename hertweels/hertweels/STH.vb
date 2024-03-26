@@ -1,4 +1,7 @@
-﻿Public Class STH
+﻿Imports System.Reflection.Emit
+Imports System.Windows
+
+Public Class STH
     Public Property price As Integer
     Dim total As Decimal
     Public Property picture As Image
@@ -8,7 +11,8 @@
     End Sub
 
     Private Sub checkoutbutton_Click(sender As Object, e As EventArgs) Handles checkoutbutton.Click
-
+        Me.Hide()
+        checkoutform.ShowDialog()
     End Sub
 
     Private Sub STH_Load(sender As Object, e As EventArgs) Handles MyBase.Load
