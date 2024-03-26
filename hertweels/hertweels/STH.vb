@@ -14,5 +14,6 @@
     Private Sub STH_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         carpb.Image = picture
         namelabel.Text = carname
+        pricelabel.Text = price
     End Sub
 End Class

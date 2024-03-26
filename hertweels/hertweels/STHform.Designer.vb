@@ -30,6 +30,8 @@ Partial Class STHform
         Me.Sth1 = New hertweels.STH()
         Me.Sth5 = New hertweels.STH()
         Me.Sth6 = New hertweels.STH()
+        Me.Sth7 = New hertweels.STH()
+        Me.Sth8 = New hertweels.STH()
         Me.SuspendLayout()
         '
         'homebutton
@@ -107,6 +109,28 @@ Partial Class STHform
         Me.Sth6.Size = New System.Drawing.Size(401, 109)
         Me.Sth6.TabIndex = 6
         '
+        'Sth7
+        '
+        Me.Sth7.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Sth7.carname = "Porsche 918 Spyder"
+        Me.Sth7.Location = New System.Drawing.Point(881, 81)
+        Me.Sth7.Name = "Sth7"
+        Me.Sth7.picture = CType(resources.GetObject("Sth7.picture"), System.Drawing.Image)
+        Me.Sth7.price = 55
+        Me.Sth7.Size = New System.Drawing.Size(294, 109)
+        Me.Sth7.TabIndex = 7
+        '
+        'Sth8
+        '
+        Me.Sth8.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Sth8.carname = "Shelby GT500"
+        Me.Sth8.Location = New System.Drawing.Point(881, 235)
+        Me.Sth8.Name = "Sth8"
+        Me.Sth8.picture = CType(resources.GetObject("Sth8.picture"), System.Drawing.Image)
+        Me.Sth8.price = 120
+        Me.Sth8.Size = New System.Drawing.Size(294, 109)
+        Me.Sth8.TabIndex = 8
+        '
         'STHform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -114,6 +138,8 @@ Partial Class STHform
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.ClientSize = New System.Drawing.Size(1220, 646)
+        Me.Controls.Add(Me.Sth8)
+        Me.Controls.Add(Me.Sth7)
         Me.Controls.Add(Me.Sth6)
         Me.Controls.Add(Me.Sth5)
         Me.Controls.Add(Me.Sth4)
@@ -134,4 +160,6 @@ Partial Class STHform
     Friend WithEvents Sth4 As STH
     Friend WithEvents Sth5 As STH
     Friend WithEvents Sth6 As STH
+    Friend WithEvents Sth7 As STH
+    Friend WithEvents Sth8 As STH
 End Class
