@@ -23,12 +23,12 @@ Partial Class mainlineform
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.homebutton = New System.Windows.Forms.Button()
-        Me.Sth5 = New hertweels.STH()
-        Me.Sth6 = New hertweels.STH()
-        Me.Sth7 = New hertweels.STH()
-        Me.Sth8 = New hertweels.STH()
-        Me.Sth9 = New hertweels.STH()
         Me.Sth10 = New hertweels.STH()
+        Me.Sth9 = New hertweels.STH()
+        Me.Sth8 = New hertweels.STH()
+        Me.Sth7 = New hertweels.STH()
+        Me.Sth6 = New hertweels.STH()
+        Me.Sth5 = New hertweels.STH()
         Me.Sth4 = New hertweels.STH()
         Me.Sth3 = New hertweels.STH()
         Me.Sth2 = New hertweels.STH()
@@ -44,49 +44,16 @@ Partial Class mainlineform
         Me.homebutton.Text = "HOME"
         Me.homebutton.UseVisualStyleBackColor = True
         '
-        'Sth5
+        'Sth10
         '
-        Me.Sth5.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Sth5.carname = Nothing
-        Me.Sth5.Location = New System.Drawing.Point(12, 156)
-        Me.Sth5.Name = "Sth5"
-        Me.Sth5.picture = Nothing
-        Me.Sth5.price = 0
-        Me.Sth5.Size = New System.Drawing.Size(204, 109)
-        Me.Sth5.TabIndex = 5
-        '
-        'Sth6
-        '
-        Me.Sth6.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Sth6.carname = Nothing
-        Me.Sth6.Location = New System.Drawing.Point(432, 156)
-        Me.Sth6.Name = "Sth6"
-        Me.Sth6.picture = Nothing
-        Me.Sth6.price = 0
-        Me.Sth6.Size = New System.Drawing.Size(204, 109)
-        Me.Sth6.TabIndex = 6
-        '
-        'Sth7
-        '
-        Me.Sth7.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Sth7.carname = Nothing
-        Me.Sth7.Location = New System.Drawing.Point(222, 156)
-        Me.Sth7.Name = "Sth7"
-        Me.Sth7.picture = Nothing
-        Me.Sth7.price = 0
-        Me.Sth7.Size = New System.Drawing.Size(204, 109)
-        Me.Sth7.TabIndex = 7
-        '
-        'Sth8
-        '
-        Me.Sth8.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Sth8.carname = Nothing
-        Me.Sth8.Location = New System.Drawing.Point(642, 156)
-        Me.Sth8.Name = "Sth8"
-        Me.Sth8.picture = Nothing
-        Me.Sth8.price = 0
-        Me.Sth8.Size = New System.Drawing.Size(204, 109)
-        Me.Sth8.TabIndex = 8
+        Me.Sth10.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Sth10.carname = "Lamborghini Diablo"
+        Me.Sth10.Location = New System.Drawing.Point(852, 156)
+        Me.Sth10.Name = "Sth10"
+        Me.Sth10.picture = Global.hertweels.My.Resources.Resources.hotwheels10
+        Me.Sth10.price = 15
+        Me.Sth10.Size = New System.Drawing.Size(204, 109)
+        Me.Sth10.TabIndex = 10
         '
         'Sth9
         '
@@ -99,16 +66,49 @@ Partial Class mainlineform
         Me.Sth9.Size = New System.Drawing.Size(204, 109)
         Me.Sth9.TabIndex = 9
         '
-        'Sth10
+        'Sth8
         '
-        Me.Sth10.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Sth10.carname = Nothing
-        Me.Sth10.Location = New System.Drawing.Point(852, 156)
-        Me.Sth10.Name = "Sth10"
-        Me.Sth10.picture = Nothing
-        Me.Sth10.price = 0
-        Me.Sth10.Size = New System.Drawing.Size(204, 109)
-        Me.Sth10.TabIndex = 10
+        Me.Sth8.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Sth8.carname = "Ice Charger"
+        Me.Sth8.Location = New System.Drawing.Point(642, 156)
+        Me.Sth8.Name = "Sth8"
+        Me.Sth8.picture = Global.hertweels.My.Resources.Resources.hotwheels9
+        Me.Sth8.price = 2
+        Me.Sth8.Size = New System.Drawing.Size(204, 109)
+        Me.Sth8.TabIndex = 8
+        '
+        'Sth7
+        '
+        Me.Sth7.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Sth7.carname = "71 El Camino"
+        Me.Sth7.Location = New System.Drawing.Point(222, 156)
+        Me.Sth7.Name = "Sth7"
+        Me.Sth7.picture = Global.hertweels.My.Resources.Resources.hotwheels7
+        Me.Sth7.price = 4
+        Me.Sth7.Size = New System.Drawing.Size(204, 109)
+        Me.Sth7.TabIndex = 7
+        '
+        'Sth6
+        '
+        Me.Sth6.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Sth6.carname = "81 Camaro"
+        Me.Sth6.Location = New System.Drawing.Point(432, 156)
+        Me.Sth6.Name = "Sth6"
+        Me.Sth6.picture = Global.hertweels.My.Resources.Resources.hotwheels8
+        Me.Sth6.price = 8
+        Me.Sth6.Size = New System.Drawing.Size(204, 109)
+        Me.Sth6.TabIndex = 6
+        '
+        'Sth5
+        '
+        Me.Sth5.BackColor = System.Drawing.Color.DeepSkyBlue
+        Me.Sth5.carname = Nothing
+        Me.Sth5.Location = New System.Drawing.Point(12, 156)
+        Me.Sth5.Name = "Sth5"
+        Me.Sth5.picture = Global.hertweels.My.Resources.Resources.hotwheels6
+        Me.Sth5.price = 0
+        Me.Sth5.Size = New System.Drawing.Size(204, 109)
+        Me.Sth5.TabIndex = 5
         '
         'Sth4
         '
