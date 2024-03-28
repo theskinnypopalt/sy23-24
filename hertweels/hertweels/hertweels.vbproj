@@ -182,5 +182,53 @@
   <ItemGroup>
     <None Include="Resources\hotwheels5.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81y4aLs5huL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81D4vpbU2EL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71dSKcE8-cL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91CuhIvAtnL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61+fJJsf4sL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasure_hunt_hot_wheels_47_ch_1697673505_0c2a8e65_progressive.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81B7FHdI0fL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasure_hunt_hot_wheels_47_ch_1697673505_0c2a8e65_progressive1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81KTAQSZptL._AC_UF894,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81HylH6zm9L.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81KTAQSZptL._AC_UF894,1000_QL80_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\81c2rUTMIhL._AC_UF894,1000_QL80_.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %2827%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91P-SKYOaOL.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91P-SKYOaOL1.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
