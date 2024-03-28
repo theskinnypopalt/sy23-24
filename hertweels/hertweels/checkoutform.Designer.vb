@@ -39,11 +39,11 @@ Partial Class checkoutform
         '
         Me.carname.AutoSize = True
         Me.carname.Font = New System.Drawing.Font("Rockwell", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.carname.Location = New System.Drawing.Point(575, 9)
+        Me.carname.Location = New System.Drawing.Point(513, 9)
         Me.carname.Name = "carname"
-        Me.carname.Size = New System.Drawing.Size(466, 49)
+        Me.carname.Size = New System.Drawing.Size(49, 49)
         Me.carname.TabIndex = 1
-        Me.carname.Text = "Mercedes-Benz 300SL"
+        Me.carname.Text = "g"
         '
         'checkoutform
         '
