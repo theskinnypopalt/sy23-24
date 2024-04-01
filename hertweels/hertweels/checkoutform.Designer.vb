@@ -28,6 +28,9 @@ Partial Class checkoutform
         Me.carname = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.pricetb = New System.Windows.Forms.Label()
+        Me.Quantitytb = New System.Windows.Forms.Label()
         CType(Me.carpb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -46,13 +49,13 @@ Partial Class checkoutform
         Me.carname.Font = New System.Drawing.Font("Rockwell", 25.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.carname.Location = New System.Drawing.Point(512, 68)
         Me.carname.Name = "carname"
-        Me.carname.Size = New System.Drawing.Size(49, 49)
+        Me.carname.Size = New System.Drawing.Size(148, 49)
         Me.carname.TabIndex = 1
-        Me.carname.Text = "g"
+        Me.carname.Text = "NAME"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(12, 12)
+        Me.Button1.Location = New System.Drawing.Point(93, 12)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
         Me.Button1.TabIndex = 2
@@ -65,11 +68,45 @@ Partial Class checkoutform
         Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
         Me.ImageList1.Images.SetKeyName(0, "23-Mercedes-Benz-300-SL-STH-US.jpg")
         Me.ImageList1.Images.SetKeyName(1, "81fkEYmpa8L.jpg")
-        Me.ImageList1.Images.SetKeyName(2, "810xPvYCoyL.jpg")
-        Me.ImageList1.Images.SetKeyName(3, "10200359_1_1.jpg")
-        Me.ImageList1.Images.SetKeyName(4, "s-l1600.jpg")
-        Me.ImageList1.Images.SetKeyName(5, "71nSzkYIs7L.jpg")
-        Me.ImageList1.Images.SetKeyName(6, "2024-hot-wheels-super-treasure-hunt-ford-rs2000.jpg")
+        Me.ImageList1.Images.SetKeyName(2, "d47f80b5af12fa60192a8d84fe2674bb.jpg")
+        Me.ImageList1.Images.SetKeyName(3, "810xPvYCoyL.jpg")
+        Me.ImageList1.Images.SetKeyName(4, "10200359_1_1.jpg")
+        Me.ImageList1.Images.SetKeyName(5, "s-l1600.jpg")
+        Me.ImageList1.Images.SetKeyName(6, "images (2).jpg")
+        Me.ImageList1.Images.SetKeyName(7, "71nSzkYIs7L.jpg")
+        Me.ImageList1.Images.SetKeyName(8, "download (2).jpg")
+        Me.ImageList1.Images.SetKeyName(9, "2024-hot-wheels-super-treasure-hunt-ford-rs2000.jpg")
+        Me.ImageList1.Images.SetKeyName(10, "my-11134207-7r98v-lmsviww79ac6b4.jpg")
+        Me.ImageList1.Images.SetKeyName(11, "images (3).jpg")
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(12, 12)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 3
+        Me.Button2.Text = "BACK"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'pricetb
+        '
+        Me.pricetb.AutoSize = True
+        Me.pricetb.Font = New System.Drawing.Font("Rockwell", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.pricetb.Location = New System.Drawing.Point(514, 334)
+        Me.pricetb.Name = "pricetb"
+        Me.pricetb.Size = New System.Drawing.Size(115, 38)
+        Me.pricetb.TabIndex = 4
+        Me.pricetb.Text = "PRICE"
+        '
+        'Quantitytb
+        '
+        Me.Quantitytb.AutoSize = True
+        Me.Quantitytb.Font = New System.Drawing.Font("Rockwell", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Quantitytb.Location = New System.Drawing.Point(514, 214)
+        Me.Quantitytb.Name = "Quantitytb"
+        Me.Quantitytb.Size = New System.Drawing.Size(186, 38)
+        Me.Quantitytb.TabIndex = 5
+        Me.Quantitytb.Text = "QUANTITY"
         '
         'checkoutform
         '
@@ -77,6 +114,9 @@ Partial Class checkoutform
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.ClientSize = New System.Drawing.Size(1220, 646)
+        Me.Controls.Add(Me.Quantitytb)
+        Me.Controls.Add(Me.pricetb)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.carname)
         Me.Controls.Add(Me.carpb)
@@ -92,4 +132,7 @@ Partial Class checkoutform
     Friend WithEvents carname As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents ImageList1 As ImageList
+    Friend WithEvents Button2 As Button
+    Friend WithEvents pricetb As Label
+    Friend WithEvents Quantitytb As Label
 End Class

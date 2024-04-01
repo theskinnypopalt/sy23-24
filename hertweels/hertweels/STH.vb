@@ -14,14 +14,17 @@ Public Class STH
 
     Private Sub quantityupdown_ValueChanged(sender As Object, e As EventArgs) Handles quantityupdown.ValueChanged
         pricelabel.Text = price * quantityupdown.Value
+        STHform.checkoutpricetb.Text = quantityupdown.Value
     End Sub
 
     Private Sub checkoutbutton_Click(sender As Object, e As EventArgs) Handles checkoutbutton.Click
         If quantityupdown.Value >= 1 Then
             STHform.TextBox1.Text = ID
+            STHform.checkoutpricepagetb.Text = pricelabel.Text
             checkoutform.ShowDialog()
             Me.Hide()
             STHform.Hide()
+
         End If
     End Sub
 
