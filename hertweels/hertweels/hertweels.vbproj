@@ -230,5 +230,23 @@
   <ItemGroup>
     <None Include="Resources\91P-SKYOaOL1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels12.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels13.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels14.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels15.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels15.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotwheels61.JPG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

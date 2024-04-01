@@ -223,6 +223,56 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property hotwheels12() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hotwheels12", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hotwheels13() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hotwheels13", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hotwheels14() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hotwheels14", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hotwheels15() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hotwheels15", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hotwheels151() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hotwheels151", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property hotwheels2() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("hotwheels2", resourceCulture)
@@ -266,6 +316,16 @@ Namespace My.Resources
         Friend ReadOnly Property hotwheels6() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("hotwheels6", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property hotwheels61() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("hotwheels61", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
