@@ -28,9 +28,18 @@ Public Class STH
         If quantityupdown.Value >= 1 And mainlineform.Visible = True Then
             mainlineform.idtextbox.Text = ID
             mainlineform.pricetb.Text = pricelabel.Text
+            mainlineform.quantitytb.Text = quantityupdown.Value
             checkoutform.ShowDialog()
             Me.Hide()
             mainlineform.Hide()
+        End If
+        If quantityupdown.Value >= 1 And THform.Visible = True Then
+            THform.idtextbox.Text = ID
+            THform.pricetb.Text = pricelabel.Text
+            THform.quantitytb.Text = quantityupdown.Value
+            checkoutform.ShowDialog()
+            Me.Hide()
+            THform.Hide()
         End If
     End Sub
 
