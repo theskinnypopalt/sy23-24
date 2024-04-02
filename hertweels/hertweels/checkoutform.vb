@@ -74,6 +74,13 @@
             Quantitytb.Text = STHform.checkoutpricetb.Text
             pricetb.Text = STHform.checkoutpricepagetb.Text
         End If
+        If mainlineform.idtextbox.Text = "13" Then
+            carname.Text = "Nissan GT-R"
+            carpb.Image = ImageList1.Images(0)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
