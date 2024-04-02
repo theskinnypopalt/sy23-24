@@ -78,6 +78,21 @@ Partial Class checkoutform
         Me.ImageList1.Images.SetKeyName(9, "2024-hot-wheels-super-treasure-hunt-ford-rs2000.jpg")
         Me.ImageList1.Images.SetKeyName(10, "my-11134207-7r98v-lmsviww79ac6b4.jpg")
         Me.ImageList1.Images.SetKeyName(11, "images (3).jpg")
+        Me.ImageList1.Images.SetKeyName(12, "hotwheels1.jpeg")
+        Me.ImageList1.Images.SetKeyName(13, "hotwheels2.jpeg")
+        Me.ImageList1.Images.SetKeyName(14, "hotwheels3.jpeg")
+        Me.ImageList1.Images.SetKeyName(15, "hotwheels4.jpeg")
+        Me.ImageList1.Images.SetKeyName(16, "hotwheels5.jpeg")
+        Me.ImageList1.Images.SetKeyName(17, "hotwheels6.JPG")
+        Me.ImageList1.Images.SetKeyName(18, "hotwheels7.JPG")
+        Me.ImageList1.Images.SetKeyName(19, "hotwheels8.JPG")
+        Me.ImageList1.Images.SetKeyName(20, "hotwheels9.JPG")
+        Me.ImageList1.Images.SetKeyName(21, "hotwheels10.JPG")
+        Me.ImageList1.Images.SetKeyName(22, "hotwheels12.JPG")
+        Me.ImageList1.Images.SetKeyName(23, "hotwheels13.JPG")
+        Me.ImageList1.Images.SetKeyName(24, "hotwheels14.JPG")
+        Me.ImageList1.Images.SetKeyName(25, "hotwheels15.jpeg")
+        Me.ImageList1.Images.SetKeyName(26, "hotwheels15.JPG")
         '
         'Button2
         '
@@ -94,7 +109,7 @@ Partial Class checkoutform
         Me.pricetb.Font = New System.Drawing.Font("Rockwell", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.pricetb.Location = New System.Drawing.Point(514, 334)
         Me.pricetb.Name = "pricetb"
-        Me.pricetb.Size = New System.Drawing.Size(115, 38)
+        Me.pricetb.Size = New System.Drawing.Size(111, 37)
         Me.pricetb.TabIndex = 4
         Me.pricetb.Text = "PRICE"
         '
@@ -104,7 +119,7 @@ Partial Class checkoutform
         Me.Quantitytb.Font = New System.Drawing.Font("Rockwell", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Quantitytb.Location = New System.Drawing.Point(514, 214)
         Me.Quantitytb.Name = "Quantitytb"
-        Me.Quantitytb.Size = New System.Drawing.Size(186, 38)
+        Me.Quantitytb.Size = New System.Drawing.Size(180, 37)
         Me.Quantitytb.TabIndex = 5
         Me.Quantitytb.Text = "QUANTITY"
         '
