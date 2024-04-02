@@ -76,7 +76,91 @@
         End If
         If mainlineform.idtextbox.Text = "13" Then
             carname.Text = "Nissan GT-R"
-            carpb.Image = ImageList1.Images(0)
+            carpb.Image = ImageList1.Images(12)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "14" Then
+            carname.Text = "Peak Tacoma"
+            carpb.Image = ImageList1.Images(13)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "15" Then
+            carname.Text = "Czinger 21C"
+            carpb.Image = ImageList1.Images(14)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "16" Then
+            carname.Text = "Saleen S7 Blue"
+            carpb.Image = ImageList1.Images(15)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "17" Then
+            carname.Text = "Porsche 911 GT3"
+            carpb.Image = ImageList1.Images(16)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "18" Then
+            carname.Text = "GT Scorcher"
+            carpb.Image = ImageList1.Images(17)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "19" Then
+            carname.Text = "71 El Camino"
+            carpb.Image = ImageList1.Images(18)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "20" Then
+            carname.Text = "81 Camaro"
+            carpb.Image = ImageList1.Images(19)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "21" Then
+            carname.Text = "Ice Charger"
+            carpb.Image = ImageList1.Images(20)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "22" Then
+            carname.Text = "Lamborghini Diablo"
+            carpb.Image = ImageList1.Images(21)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "23" Then
+            carname.Text = "57 Plymouth Fury"
+            carpb.Image = ImageList1.Images(22)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "24" Then
+            carname.Text = "10 Pro Stock Camaro"
+            carpb.Image = ImageList1.Images(23)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "25" Then
+            carname.Text = "Batman: Arkham Knight Batmobile"
+            carpb.Image = ImageList1.Images(24)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "26" Then
+            carname.Text = "16 Bugatti Chiron"
+            carpb.Image = ImageList1.Images(25)
+            Quantitytb.Text = mainlineform.pricetb.Text
+            pricetb.Text = mainlineform.quantitytb.Text
+        End If
+        If mainlineform.idtextbox.Text = "27" Then
+            carname.Text = "The Nash"
+            carpb.Image = ImageList1.Images(26)
             Quantitytb.Text = mainlineform.pricetb.Text
             pricetb.Text = mainlineform.quantitytb.Text
         End If
@@ -91,5 +175,9 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         STHform.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub pricetb_Click(sender As Object, e As EventArgs) Handles pricetb.Click
+
     End Sub
 End Class

@@ -7,4 +7,8 @@
     Private Sub mainlineform_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Form1.Hide()
     End Sub
+
+    Private Sub pricetb_TextChanged(sender As Object, e As EventArgs) Handles pricetb.TextChanged
+
+    End Sub
 End Class

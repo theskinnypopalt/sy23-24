@@ -24,6 +24,10 @@ Partial Class mainlineform
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.homebutton = New System.Windows.Forms.Button()
+        Me.idtextbox = New System.Windows.Forms.TextBox()
+        Me.pricetb = New System.Windows.Forms.TextBox()
+        Me.quantitytb = New System.Windows.Forms.TextBox()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.Sth11 = New hertweels.STH()
         Me.Sth12 = New hertweels.STH()
         Me.Sth13 = New hertweels.STH()
@@ -39,10 +43,6 @@ Partial Class mainlineform
         Me.Sth3 = New hertweels.STH()
         Me.Sth2 = New hertweels.STH()
         Me.Sth1 = New hertweels.STH()
-        Me.idtextbox = New System.Windows.Forms.TextBox()
-        Me.pricetb = New System.Windows.Forms.TextBox()
-        Me.quantitytb = New System.Windows.Forms.TextBox()
-        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.SuspendLayout()
         '
         'homebutton
@@ -53,6 +53,33 @@ Partial Class mainlineform
         Me.homebutton.TabIndex = 0
         Me.homebutton.Text = "HOME"
         Me.homebutton.UseVisualStyleBackColor = True
+        '
+        'idtextbox
+        '
+        Me.idtextbox.Location = New System.Drawing.Point(988, 499)
+        Me.idtextbox.Name = "idtextbox"
+        Me.idtextbox.Size = New System.Drawing.Size(100, 22)
+        Me.idtextbox.TabIndex = 16
+        '
+        'pricetb
+        '
+        Me.pricetb.Location = New System.Drawing.Point(882, 499)
+        Me.pricetb.Name = "pricetb"
+        Me.pricetb.Size = New System.Drawing.Size(100, 22)
+        Me.pricetb.TabIndex = 17
+        '
+        'quantitytb
+        '
+        Me.quantitytb.Location = New System.Drawing.Point(776, 499)
+        Me.quantitytb.Name = "quantitytb"
+        Me.quantitytb.Size = New System.Drawing.Size(100, 22)
+        Me.quantitytb.TabIndex = 18
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
         '
         'Sth11
         '
@@ -201,7 +228,7 @@ Partial Class mainlineform
         'Sth3
         '
         Me.Sth3.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Sth3.carname = "Czinger 21C 13/250"
+        Me.Sth3.carname = "Czinger 21C"
         Me.Sth3.ID = 15
         Me.Sth3.Location = New System.Drawing.Point(432, 41)
         Me.Sth3.Name = "Sth3"
@@ -233,33 +260,6 @@ Partial Class mainlineform
         Me.Sth1.price = 2
         Me.Sth1.Size = New System.Drawing.Size(204, 109)
         Me.Sth1.TabIndex = 1
-        '
-        'idtextbox
-        '
-        Me.idtextbox.Location = New System.Drawing.Point(988, 499)
-        Me.idtextbox.Name = "idtextbox"
-        Me.idtextbox.Size = New System.Drawing.Size(100, 22)
-        Me.idtextbox.TabIndex = 16
-        '
-        'pricetb
-        '
-        Me.pricetb.Location = New System.Drawing.Point(882, 499)
-        Me.pricetb.Name = "pricetb"
-        Me.pricetb.Size = New System.Drawing.Size(100, 22)
-        Me.pricetb.TabIndex = 17
-        '
-        'quantitytb
-        '
-        Me.quantitytb.Location = New System.Drawing.Point(776, 499)
-        Me.quantitytb.Name = "quantitytb"
-        Me.quantitytb.Size = New System.Drawing.Size(100, 22)
-        Me.quantitytb.TabIndex = 18
-        '
-        'ImageList1
-        '
-        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
-        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
-        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
         '
         'mainlineform
         '
