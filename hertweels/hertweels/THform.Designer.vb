@@ -125,6 +125,7 @@ Partial Class THform
         '
         Me.Sth6.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth6.carname = Nothing
+        Me.Sth6.carname = "Muscle-N-Blown"
         Me.Sth6.ID = 32
         Me.Sth6.Location = New System.Drawing.Point(28, 218)
         Me.Sth6.Name = "Sth6"
@@ -137,6 +138,7 @@ Partial Class THform
         '
         Me.Sth5.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth5.carname = Nothing
+        Me.Sth5.carname = "47-Chevy-Fleetline"
         Me.Sth5.ID = 33
         Me.Sth5.Location = New System.Drawing.Point(305, 218)
         Me.Sth5.Name = "Sth5"
