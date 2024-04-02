@@ -18,13 +18,19 @@ Public Class STH
     End Sub
 
     Private Sub checkoutbutton_Click(sender As Object, e As EventArgs) Handles checkoutbutton.Click
-        If quantityupdown.Value >= 1 Then
+        If quantityupdown.Value >= 1 And STHform.Visible = True Then
             STHform.TextBox1.Text = ID
             STHform.checkoutpricepagetb.Text = pricelabel.Text
             checkoutform.ShowDialog()
             Me.Hide()
             STHform.Hide()
-
+        End If
+        If quantityupdown.Value >= 1 And mainlineform.Visible = True Then
+            mainlineform.idtextbox.Text = ID
+            mainlineform.pricetb.Text = pricelabel.Text
+            checkoutform.ShowDialog()
+            Me.Hide()
+            mainlineform.Hide()
         End If
     End Sub
 

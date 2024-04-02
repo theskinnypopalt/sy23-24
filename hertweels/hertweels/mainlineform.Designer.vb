@@ -22,6 +22,7 @@ Partial Class mainlineform
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.homebutton = New System.Windows.Forms.Button()
         Me.Sth11 = New hertweels.STH()
         Me.Sth12 = New hertweels.STH()
@@ -38,6 +39,10 @@ Partial Class mainlineform
         Me.Sth3 = New hertweels.STH()
         Me.Sth2 = New hertweels.STH()
         Me.Sth1 = New hertweels.STH()
+        Me.idtextbox = New System.Windows.Forms.TextBox()
+        Me.pricetb = New System.Windows.Forms.TextBox()
+        Me.quantitytb = New System.Windows.Forms.TextBox()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.SuspendLayout()
         '
         'homebutton
@@ -221,7 +226,7 @@ Partial Class mainlineform
         '
         Me.Sth1.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth1.carname = "2017 Nissan GT-R R35"
-        Me.Sth1.ID = 0
+        Me.Sth1.ID = 13
         Me.Sth1.Location = New System.Drawing.Point(12, 41)
         Me.Sth1.Name = "Sth1"
         Me.Sth1.picture = Global.hertweels.My.Resources.Resources.hotwheels11
@@ -229,12 +234,42 @@ Partial Class mainlineform
         Me.Sth1.Size = New System.Drawing.Size(204, 109)
         Me.Sth1.TabIndex = 1
         '
+        'idtextbox
+        '
+        Me.idtextbox.Location = New System.Drawing.Point(988, 499)
+        Me.idtextbox.Name = "idtextbox"
+        Me.idtextbox.Size = New System.Drawing.Size(100, 22)
+        Me.idtextbox.TabIndex = 16
+        '
+        'pricetb
+        '
+        Me.pricetb.Location = New System.Drawing.Point(882, 499)
+        Me.pricetb.Name = "pricetb"
+        Me.pricetb.Size = New System.Drawing.Size(100, 22)
+        Me.pricetb.TabIndex = 17
+        '
+        'quantitytb
+        '
+        Me.quantitytb.Location = New System.Drawing.Point(776, 499)
+        Me.quantitytb.Name = "quantitytb"
+        Me.quantitytb.Size = New System.Drawing.Size(100, 22)
+        Me.quantitytb.TabIndex = 18
+        '
+        'ImageList1
+        '
+        Me.ImageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit
+        Me.ImageList1.ImageSize = New System.Drawing.Size(16, 16)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.Transparent
+        '
         'mainlineform
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.ClientSize = New System.Drawing.Size(1220, 646)
+        Me.Controls.Add(Me.quantitytb)
+        Me.Controls.Add(Me.pricetb)
+        Me.Controls.Add(Me.idtextbox)
         Me.Controls.Add(Me.Sth11)
         Me.Controls.Add(Me.Sth12)
         Me.Controls.Add(Me.Sth13)
@@ -254,6 +289,7 @@ Partial Class mainlineform
         Me.Name = "mainlineform"
         Me.Text = "mainlineform"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -273,4 +309,8 @@ Partial Class mainlineform
     Friend WithEvents Sth13 As STH
     Friend WithEvents Sth14 As STH
     Friend WithEvents Sth15 As STH
+    Friend WithEvents idtextbox As TextBox
+    Friend WithEvents pricetb As TextBox
+    Friend WithEvents quantitytb As TextBox
+    Friend WithEvents ImageList1 As ImageList
 End Class
