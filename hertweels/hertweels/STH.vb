@@ -47,5 +47,14 @@ Public Class STH
         carpb.Image = picture
         namelabel.Text = carname
         pricelabel.Text = price
+        If THform.Visible = True Then
+            Me.Visible = True
+        End If
+        If STHform.Visible = True Then
+            Me.Visible = True
+        End If
+        If mainlineform.Visible = True Then
+            Me.Visible = True
+        End If
     End Sub
 End Class
