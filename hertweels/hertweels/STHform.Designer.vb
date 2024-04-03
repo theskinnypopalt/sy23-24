@@ -75,7 +75,7 @@ Partial Class STHform
         Me.Sth12.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth12.carname = "Aventador Mirua Homage"
         Me.Sth12.ID = 12
-        Me.Sth12.Location = New System.Drawing.Point(876, 395)
+        Me.Sth12.Location = New System.Drawing.Point(855, 386)
         Me.Sth12.Name = "Sth12"
         Me.Sth12.picture = CType(resources.GetObject("Sth12.picture"), System.Drawing.Image)
         Me.Sth12.price = 140
@@ -87,7 +87,7 @@ Partial Class STHform
         Me.Sth11.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth11.carname = "Camaro SS"
         Me.Sth11.ID = 11
-        Me.Sth11.Location = New System.Drawing.Point(590, 395)
+        Me.Sth11.Location = New System.Drawing.Point(559, 395)
         Me.Sth11.Name = "Sth11"
         Me.Sth11.picture = CType(resources.GetObject("Sth11.picture"), System.Drawing.Image)
         Me.Sth11.price = 112
@@ -99,7 +99,7 @@ Partial Class STHform
         Me.Sth10.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth10.carname = "Ford RS2000"
         Me.Sth10.ID = 10
-        Me.Sth10.Location = New System.Drawing.Point(318, 395)
+        Me.Sth10.Location = New System.Drawing.Point(287, 386)
         Me.Sth10.Name = "Sth10"
         Me.Sth10.picture = CType(resources.GetObject("Sth10.picture"), System.Drawing.Image)
         Me.Sth10.price = 80
@@ -123,7 +123,7 @@ Partial Class STHform
         Me.Sth8.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth8.carname = "Shelby GT500"
         Me.Sth8.ID = 8
-        Me.Sth8.Location = New System.Drawing.Point(881, 235)
+        Me.Sth8.Location = New System.Drawing.Point(855, 225)
         Me.Sth8.Name = "Sth8"
         Me.Sth8.picture = CType(resources.GetObject("Sth8.picture"), System.Drawing.Image)
         Me.Sth8.price = 150
@@ -135,7 +135,7 @@ Partial Class STHform
         Me.Sth7.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth7.carname = "Lamborghini Sesto Elemental"
         Me.Sth7.ID = 4
-        Me.Sth7.Location = New System.Drawing.Point(881, 81)
+        Me.Sth7.Location = New System.Drawing.Point(855, 60)
         Me.Sth7.Name = "Sth7"
         Me.Sth7.picture = CType(resources.GetObject("Sth7.picture"), System.Drawing.Image)
         Me.Sth7.price = 199
@@ -147,7 +147,7 @@ Partial Class STHform
         Me.Sth6.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth6.carname = "Porsche 918 Spyder"
         Me.Sth6.ID = 7
-        Me.Sth6.Location = New System.Drawing.Point(590, 235)
+        Me.Sth6.Location = New System.Drawing.Point(559, 225)
         Me.Sth6.Name = "Sth6"
         Me.Sth6.picture = CType(resources.GetObject("Sth6.picture"), System.Drawing.Image)
         Me.Sth6.price = 80
@@ -159,7 +159,7 @@ Partial Class STHform
         Me.Sth5.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth5.carname = "Ferrari 599XX"
         Me.Sth5.ID = 6
-        Me.Sth5.Location = New System.Drawing.Point(330, 235)
+        Me.Sth5.Location = New System.Drawing.Point(287, 225)
         Me.Sth5.Name = "Sth5"
         Me.Sth5.picture = CType(resources.GetObject("Sth5.picture"), System.Drawing.Image)
         Me.Sth5.price = 350
@@ -171,7 +171,7 @@ Partial Class STHform
         Me.Sth4.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth4.carname = "Ford GT40"
         Me.Sth4.ID = 5
-        Me.Sth4.Location = New System.Drawing.Point(12, 235)
+        Me.Sth4.Location = New System.Drawing.Point(12, 225)
         Me.Sth4.Name = "Sth4"
         Me.Sth4.picture = CType(resources.GetObject("Sth4.picture"), System.Drawing.Image)
         Me.Sth4.price = 250
@@ -183,7 +183,7 @@ Partial Class STHform
         Me.Sth3.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth3.carname = "Pagani Huayra Roadster"
         Me.Sth3.ID = 3
-        Me.Sth3.Location = New System.Drawing.Point(604, 81)
+        Me.Sth3.Location = New System.Drawing.Point(559, 60)
         Me.Sth3.Name = "Sth3"
         Me.Sth3.picture = CType(resources.GetObject("Sth3.picture"), System.Drawing.Image)
         Me.Sth3.price = 60
@@ -195,7 +195,7 @@ Partial Class STHform
         Me.Sth2.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth2.carname = "Corvette Grand Sport Roadster"
         Me.Sth2.ID = 2
-        Me.Sth2.Location = New System.Drawing.Point(318, 81)
+        Me.Sth2.Location = New System.Drawing.Point(287, 60)
         Me.Sth2.Name = "Sth2"
         Me.Sth2.picture = CType(resources.GetObject("Sth2.picture"), System.Drawing.Image)
         Me.Sth2.price = 130
@@ -207,7 +207,7 @@ Partial Class STHform
         Me.Sth1.BackColor = System.Drawing.Color.DeepSkyBlue
         Me.Sth1.carname = "Mercedes-Benz 300SL"
         Me.Sth1.ID = 1
-        Me.Sth1.Location = New System.Drawing.Point(43, 81)
+        Me.Sth1.Location = New System.Drawing.Point(12, 60)
         Me.Sth1.Name = "Sth1"
         Me.Sth1.picture = CType(resources.GetObject("Sth1.picture"), System.Drawing.Image)
         Me.Sth1.price = 120
