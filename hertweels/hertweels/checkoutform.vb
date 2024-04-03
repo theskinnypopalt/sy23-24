@@ -236,7 +236,30 @@
             Quantitytb.Text = THform.quantitytb.Text
             pricetb.Text = THform.pricetb.Text
         End If
-
+        If rlcform.idtb.Text = "40" Then
+            carname.Text = "Porsche 959"
+            carpb.Image = ImageList1.Images(39)
+            Quantitytb.Text = rlcform.quantitytb.Text
+            pricetb.Text = rlcform.pricetb.Text
+        End If
+        If rlcform.idtb.Text = "41" Then
+            carname.Text = "Nissan GT-R R34"
+            carpb.Image = ImageList1.Images(40)
+            Quantitytb.Text = rlcform.quantitytb.Text
+            pricetb.Text = rlcform.pricetb.Text
+        End If
+        If rlcform.idtb.Text = "42" Then
+            carname.Text = "Lamborghini Countach"
+            carpb.Image = ImageList1.Images(41)
+            Quantitytb.Text = rlcform.quantitytb.Text
+            pricetb.Text = rlcform.pricetb.Text
+        End If
+        If rlcform.idtb.Text = "43" Then
+            carname.Text = "McLaren F1"
+            carpb.Image = ImageList1.Images(42)
+            Quantitytb.Text = rlcform.quantitytb.Text
+            pricetb.Text = rlcform.pricetb.Text
+        End If
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click

@@ -124,7 +124,6 @@ Partial Class THform
         'Sth6
         '
         Me.Sth6.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Sth6.carname = Nothing
         Me.Sth6.carname = "Muscle-N-Blown"
         Me.Sth6.ID = 32
         Me.Sth6.Location = New System.Drawing.Point(28, 218)
@@ -137,7 +136,6 @@ Partial Class THform
         'Sth5
         '
         Me.Sth5.BackColor = System.Drawing.Color.DeepSkyBlue
-        Me.Sth5.carname = Nothing
         Me.Sth5.carname = "47-Chevy-Fleetline"
         Me.Sth5.ID = 33
         Me.Sth5.Location = New System.Drawing.Point(305, 218)
@@ -201,6 +199,7 @@ Partial Class THform
         Me.idtextbox.Name = "idtextbox"
         Me.idtextbox.Size = New System.Drawing.Size(100, 22)
         Me.idtextbox.TabIndex = 14
+        Me.idtextbox.Visible = False
         '
         'pricetb
         '
@@ -208,6 +207,7 @@ Partial Class THform
         Me.pricetb.Name = "pricetb"
         Me.pricetb.Size = New System.Drawing.Size(100, 22)
         Me.pricetb.TabIndex = 15
+        Me.pricetb.Visible = False
         '
         'quantitytb
         '
@@ -215,6 +215,7 @@ Partial Class THform
         Me.quantitytb.Name = "quantitytb"
         Me.quantitytb.Size = New System.Drawing.Size(100, 22)
         Me.quantitytb.TabIndex = 16
+        Me.quantitytb.Visible = False
         '
         'THform
         '

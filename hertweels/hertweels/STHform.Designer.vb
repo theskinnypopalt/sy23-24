@@ -62,6 +62,7 @@ Partial Class STHform
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(100, 22)
         Me.TextBox1.TabIndex = 13
+        Me.TextBox1.Visible = False
         '
         'checkoutpricetb
         '
@@ -69,6 +70,7 @@ Partial Class STHform
         Me.checkoutpricetb.Name = "checkoutpricetb"
         Me.checkoutpricetb.Size = New System.Drawing.Size(100, 22)
         Me.checkoutpricetb.TabIndex = 14
+        Me.checkoutpricetb.Visible = False
         '
         'Sth12
         '
@@ -220,6 +222,7 @@ Partial Class STHform
         Me.checkoutpricepagetb.Name = "checkoutpricepagetb"
         Me.checkoutpricepagetb.Size = New System.Drawing.Size(100, 22)
         Me.checkoutpricepagetb.TabIndex = 15
+        Me.checkoutpricepagetb.Visible = False
         '
         'STHform
         '

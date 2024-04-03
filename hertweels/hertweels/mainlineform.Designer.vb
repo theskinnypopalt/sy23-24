@@ -60,6 +60,7 @@ Partial Class mainlineform
         Me.idtextbox.Name = "idtextbox"
         Me.idtextbox.Size = New System.Drawing.Size(100, 22)
         Me.idtextbox.TabIndex = 16
+        Me.idtextbox.Visible = False
         '
         'pricetb
         '
@@ -67,6 +68,7 @@ Partial Class mainlineform
         Me.pricetb.Name = "pricetb"
         Me.pricetb.Size = New System.Drawing.Size(100, 22)
         Me.pricetb.TabIndex = 17
+        Me.pricetb.Visible = False
         '
         'quantitytb
         '
@@ -74,6 +76,7 @@ Partial Class mainlineform
         Me.quantitytb.Name = "quantitytb"
         Me.quantitytb.Size = New System.Drawing.Size(100, 22)
         Me.quantitytb.TabIndex = 18
+        Me.quantitytb.Visible = False
         '
         'ImageList1
         '

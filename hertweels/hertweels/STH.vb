@@ -41,6 +41,14 @@ Public Class STH
             Me.Hide()
             THform.Hide()
         End If
+        If quantityupdown.Value >= 1 And rlcform.Visible = True Then
+            rlcform.idtb.Text = ID
+            rlcform.pricetb.Text = pricelabel.Text
+            rlcform.quantitytb.Text = quantityupdown.Value
+            checkoutform.ShowDialog()
+            Me.Hide()
+            rlcform.Hide()
+        End If
     End Sub
 
     Private Sub STH_Load(sender As Object, e As EventArgs) Handles MyBase.Load
