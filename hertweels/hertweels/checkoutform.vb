@@ -149,7 +149,7 @@
         If mainlineform.idtextbox.Text = "25" Then
             carname.Text = "Batman: Arkham Knight Batmobile"
             carpb.Image = ImageList1.Images(24)
-<<<<<<< HEAD
+
             Quantitytb.Text = mainlineform.pricetb.Text
             pricetb.Text = mainlineform.quantitytb.Text
         End If
@@ -162,8 +162,7 @@
         If mainlineform.idtextbox.Text = "27" Then
             carname.Text = "The Nash"
             carpb.Image = ImageList1.Images(26)
-=======
->>>>>>> main
+
             Quantitytb.Text = mainlineform.pricetb.Text
             pricetb.Text = mainlineform.quantitytb.Text
         End If

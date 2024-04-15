@@ -93,8 +93,7 @@ Partial Class checkoutform
         Me.ImageList1.Images.SetKeyName(24, "hotwheels14.JPG")
         Me.ImageList1.Images.SetKeyName(25, "hotwheels15.jpeg")
         Me.ImageList1.Images.SetKeyName(26, "hotwheels15.JPG")
-<<<<<<< HEAD
-=======
+
         Me.ImageList1.Images.SetKeyName(27, "tesla road(28).jpg")
         Me.ImageList1.Images.SetKeyName(28, "Draft (28).jpg")
         Me.ImageList1.Images.SetKeyName(29, "67custom(28).jpg")
@@ -107,14 +106,12 @@ Partial Class checkoutform
         Me.ImageList1.Images.SetKeyName(36, "Twin mill (28).jpg")
         Me.ImageList1.Images.SetKeyName(37, "Mig-Rig(28).jpg")
         Me.ImageList1.Images.SetKeyName(38, "Batman (28).jpg")
-<<<<<<< HEAD
+
         Me.ImageList1.Images.SetKeyName(39, "61+lOmHQrDL.jpg")
         Me.ImageList1.Images.SetKeyName(40, "s-l500.jpg")
         Me.ImageList1.Images.SetKeyName(41, "FIdLcHGaAAMN4uu.jpg")
         Me.ImageList1.Images.SetKeyName(42, "rlc_mclaren_f1_1711755873_cbd02a85_progressive.jpg")
-=======
->>>>>>> main
->>>>>>> main
+
         '
         'Button2
         '
