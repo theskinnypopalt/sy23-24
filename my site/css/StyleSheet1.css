@@ -2,7 +2,12 @@
 {background-color:lightskyblue;
 }
 h1{color:firebrick;}
-h2{color:aquamarine;}
+h2 {
+    color: black;
+    font-size: 50px;
+    font-family: Sitka Display;
+    position: center;
+}
 h3 {
 color:dimgrey;
 font-size: 50px;
