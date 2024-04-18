@@ -1,0 +1,29 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:credit_card_payment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="label1" Content="CREDIT CARD PAYMENT" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label x:Name="shipping_label" Content="INFO" HorizontalAlignment="Center" Margin="0,52,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <Label x:Name="address_label" Content="ADDRESS" HorizontalAlignment="Left" Margin="180,141,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.776,-0.753"/>
+        <TextBox x:Name="address_textbox" HorizontalAlignment="Left" Margin="246,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="first_name_label" Content="FIRST NAME" HorizontalAlignment="Left" Margin="165,97,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="first_name_textbox" HorizontalAlignment="Left" Margin="246,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Foreground="Black"/>
+        <Label x:Name="last_name_label" Content="LAST NAME" HorizontalAlignment="Left" Margin="400,97,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="last_name_textbox" HorizontalAlignment="Left" Margin="478,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="phone_number_label" Content="PHONE" HorizontalAlignment="Left" Margin="424,141,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="phone_text_box" HorizontalAlignment="Left" Margin="478,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="cardnumber_label" Content="CARD NUMBER" HorizontalAlignment="Left" Margin="148,182,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="card_number_textbox" HorizontalAlignment="Left" Margin="246,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="ccv_label" Content="CCV" HorizontalAlignment="Left" Margin="441,182,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ccv_textbox" HorizontalAlignment="Left" Margin="478,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="expdate_label" Content="EXP DATE" HorizontalAlignment="Left" Margin="180,217,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="exp_date_textbox" HorizontalAlignment="Left" Margin="246,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="confirm_purchase_button" Content="CONFIRM PURCHASE" HorizontalAlignment="Center" Margin="0,258,0,0" VerticalAlignment="Top" Height="66" Width="168" FontSize="16"/>
+
+    </Grid>
+</Window>
