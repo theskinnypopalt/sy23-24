@@ -14,7 +14,13 @@
     Private Sub phone_text_box_TextChanged(sender As Object, e As TextChangedEventArgs) Handles phone_text_box.TextChanged
         Dim phonenumber As Boolean = (phone_text_box.Text Like "(###)###-####") OrElse (phone_text_box.Text Like "##########")
         Dim firstname As Boolean = (first_name_textbox.Text Like "*")
-        If phonenumber = True Then
+        Dim lastname As Boolean = (last_name_textbox.Text Like "*")
+        Dim address As Boolean = (address_textbox.Text Like "*")
+        Dim cardnumber As Boolean = (card_number_textbox.Text Like "################")
+        Dim ccv As Boolean = (ccv_textbox.Text Like "###")
+        Dim expdate As Boolean = (exp_date_textbox.Text Like "#/##") OrElse (exp_date_textbox.Text Like "##/##")
+        If firstname = True And phonenumber = True And lastname = True And address = True And cardnumber = True And
+         ccv = True And expdate = True Then
             confirm_purchase_button.IsEnabled = True
         End If
     End Sub
@@ -24,8 +30,81 @@
         Dim firstname As Boolean = (first_name_textbox.Text Like "*")
         Dim lastname As Boolean = (last_name_textbox.Text Like "*")
         Dim address As Boolean = (address_textbox.Text Like "*")
-        Dim cardnumber As Boolean = (card_number_textbox.Text Like "")
-        If firstname = True And phonenumber = True And lastname = True And address = True Then
+        Dim cardnumber As Boolean = (card_number_textbox.Text Like "################")
+        Dim ccv As Boolean = (ccv_textbox.Text Like "###")
+        Dim expdate As Boolean = (exp_date_textbox.Text Like "#/##") OrElse (exp_date_textbox.Text Like "##/##")
+        If firstname = True And phonenumber = True And lastname = True And address = True And cardnumber = True And
+         ccv = True And expdate = True Then
+            confirm_purchase_button.IsEnabled = True
+        End If
+    End Sub
+
+    Private Sub last_name_textbox_TextChanged(sender As Object, e As TextChangedEventArgs) Handles last_name_textbox.TextChanged
+        Dim phonenumber As Boolean = (phone_text_box.Text Like "(###)###-####") OrElse (phone_text_box.Text Like "##########")
+        Dim firstname As Boolean = (first_name_textbox.Text Like "*")
+        Dim lastname As Boolean = (last_name_textbox.Text Like "*")
+        Dim address As Boolean = (address_textbox.Text Like "*")
+        Dim cardnumber As Boolean = (card_number_textbox.Text Like "################")
+        Dim ccv As Boolean = (ccv_textbox.Text Like "###")
+        Dim expdate As Boolean = (exp_date_textbox.Text Like "#/##") OrElse (exp_date_textbox.Text Like "##/##")
+        If firstname = True And phonenumber = True And lastname = True And address = True And cardnumber = True And
+         ccv = True And expdate = True Then
+            confirm_purchase_button.IsEnabled = True
+        End If
+    End Sub
+
+    Private Sub address_textbox_TextChanged(sender As Object, e As TextChangedEventArgs) Handles address_textbox.TextChanged
+        Dim phonenumber As Boolean = (phone_text_box.Text Like "(###)###-####") OrElse (phone_text_box.Text Like "##########")
+        Dim firstname As Boolean = (first_name_textbox.Text Like "*")
+        Dim lastname As Boolean = (last_name_textbox.Text Like "*")
+        Dim address As Boolean = (address_textbox.Text Like "*")
+        Dim cardnumber As Boolean = (card_number_textbox.Text Like "################")
+        Dim ccv As Boolean = (ccv_textbox.Text Like "###")
+        Dim expdate As Boolean = (exp_date_textbox.Text Like "#/##") OrElse (exp_date_textbox.Text Like "##/##")
+        If firstname = True And phonenumber = True And lastname = True And address = True And cardnumber = True And
+         ccv = True And expdate = True Then
+            confirm_purchase_button.IsEnabled = True
+        End If
+    End Sub
+
+    Private Sub card_number_textbox_TextChanged(sender As Object, e As TextChangedEventArgs) Handles card_number_textbox.TextChanged
+        Dim phonenumber As Boolean = (phone_text_box.Text Like "(###)###-####") OrElse (phone_text_box.Text Like "##########")
+        Dim firstname As Boolean = (first_name_textbox.Text Like "*")
+        Dim lastname As Boolean = (last_name_textbox.Text Like "*")
+        Dim address As Boolean = (address_textbox.Text Like "*")
+        Dim cardnumber As Boolean = (card_number_textbox.Text Like "################")
+        Dim ccv As Boolean = (ccv_textbox.Text Like "###")
+        Dim expdate As Boolean = (exp_date_textbox.Text Like "#/##") OrElse (exp_date_textbox.Text Like "##/##")
+        If firstname = True And phonenumber = True And lastname = True And address = True And cardnumber = True And
+         ccv = True And expdate = True Then
+            confirm_purchase_button.IsEnabled = True
+        End If
+    End Sub
+
+    Private Sub ccv_textbox_TextChanged(sender As Object, e As TextChangedEventArgs) Handles ccv_textbox.TextChanged
+        Dim phonenumber As Boolean = (phone_text_box.Text Like "(###)###-####") OrElse (phone_text_box.Text Like "##########")
+        Dim firstname As Boolean = (first_name_textbox.Text Like "*")
+        Dim lastname As Boolean = (last_name_textbox.Text Like "*")
+        Dim address As Boolean = (address_textbox.Text Like "*")
+        Dim cardnumber As Boolean = (card_number_textbox.Text Like "################")
+        Dim ccv As Boolean = (ccv_textbox.Text Like "###")
+        Dim expdate As Boolean = (exp_date_textbox.Text Like "#/##") OrElse (exp_date_textbox.Text Like "##/##")
+        If firstname = True And phonenumber = True And lastname = True And address = True And cardnumber = True And
+         ccv = True And expdate = True Then
+            confirm_purchase_button.IsEnabled = True
+        End If
+    End Sub
+
+    Private Sub exp_date_textbox_TextChanged(sender As Object, e As TextChangedEventArgs) Handles exp_date_textbox.TextChanged
+        Dim phonenumber As Boolean = (phone_text_box.Text Like "(###)###-####") OrElse (phone_text_box.Text Like "##########")
+        Dim firstname As Boolean = (first_name_textbox.Text Like "*")
+        Dim lastname As Boolean = (last_name_textbox.Text Like "*")
+        Dim address As Boolean = (address_textbox.Text Like "*")
+        Dim cardnumber As Boolean = (card_number_textbox.Text Like "################")
+        Dim ccv As Boolean = (ccv_textbox.Text Like "###")
+        Dim expdate As Boolean = (exp_date_textbox.Text Like "#/##") OrElse (exp_date_textbox.Text Like "##/##")
+        If firstname = True And phonenumber = True And lastname = True And address = True And cardnumber = True And
+         ccv = True And expdate = True Then
             confirm_purchase_button.IsEnabled = True
         End If
     End Sub
