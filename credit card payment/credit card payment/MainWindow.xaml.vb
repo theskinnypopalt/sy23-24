@@ -23,6 +23,12 @@
          ccv = True And expdate = True Then
             confirm_purchase_button.IsEnabled = True
         End If
+        If phonenumber = False Then
+            phonelabelerror.Content = "Please enter a valid phone number"
+        End If
+        If phonenumber = True Then
+            phonelabelerror.Content = ""
+        End If
     End Sub
 
     Private Sub first_name_textbox_TextChanged(sender As Object, e As TextChangedEventArgs) Handles first_name_textbox.TextChanged
@@ -65,6 +71,12 @@
          ccv = True And expdate = True Then
             confirm_purchase_button.IsEnabled = True
         End If
+        If address = False Then
+            addresserrorlabel.Content = "Please enter a valid address"
+        End If
+        If address = True Then
+            addresserrorlabel.Content = ""
+        End If
     End Sub
 
     Private Sub card_number_textbox_TextChanged(sender As Object, e As TextChangedEventArgs) Handles card_number_textbox.TextChanged
@@ -78,6 +90,12 @@
         If firstname = True And phonenumber = True And lastname = True And address = True And cardnumber = True And
          ccv = True And expdate = True Then
             confirm_purchase_button.IsEnabled = True
+        End If
+        If cardnumber = False Then
+            cardnumbererrorlabel.Content = "Please enter a valid card number"
+        End If
+        If cardnumber = True Then
+            cardnumbererrorlabel.Content = ""
         End If
     End Sub
 
@@ -93,6 +111,12 @@
          ccv = True And expdate = True Then
             confirm_purchase_button.IsEnabled = True
         End If
+        If ccv = False Then
+            ccverrorlabel.Content = "Please enter a valid ccv number"
+        End If
+        If ccv = True Then
+            ccverrorlabel.Content = ""
+        End If
     End Sub
 
     Private Sub exp_date_textbox_TextChanged(sender As Object, e As TextChangedEventArgs) Handles exp_date_textbox.TextChanged
@@ -106,6 +130,12 @@
         If firstname = True And phonenumber = True And lastname = True And address = True And cardnumber = True And
          ccv = True And expdate = True Then
             confirm_purchase_button.IsEnabled = True
+        End If
+        If expdate = False Then
+            expdatelabel.Content = "Please enter a valid date"
+        End If
+        If expdate = True Then
+            expdatelabel.Content = ""
         End If
     End Sub
 End Class
