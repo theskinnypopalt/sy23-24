@@ -11,6 +11,7 @@
         <Calendar x:Name="calender1" HorizontalAlignment="Left" Margin="21,33,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="Label" HorizontalAlignment="Left" Margin="212,217,0,0" VerticalAlignment="Top"/>
         <Label x:Name="astrosignlabel" Content="Label" HorizontalAlignment="Left" Margin="212,262,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="piclabel" Content="Label" HorizontalAlignment="Left" Margin="275,262,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
