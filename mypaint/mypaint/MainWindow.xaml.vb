@@ -5,17 +5,80 @@ Class MainWindow
     Dim c1 As Color
     Dim c2 As Color
 
-    Private Sub drawingCanvas_MouseMove(sender As Object, e As MouseEventArgs) Handles drawingCanvas.MouseMove
-        Dim el As New Ellipse
-        el.Width = widthSlider.Value
-        el.Height = heightSlider.Value
-        el.Fill = color1Rectangle.Fill
 
-        Dim p As Point = Mouse.GetPosition(drawingCanvas)
-        Canvas.SetLeft(el, p.X)
-        Canvas.SetTop(el, p.Y)
-        If e.MouseDevice.LeftButton = MouseButtonState.Pressed Then
-            mainCanvas.Children.Add(el)
+    Private Sub drawingCanvas_MouseMove(sender As Object, e As MouseEventArgs) Handles drawingCanvas.MouseMove
+        If shapelabel.Content = "ELIPSE" Then
+            Dim el As New Ellipse
+            el.Width = widthSlider.Value
+            el.Height = heightSlider.Value
+            el.Fill = color1Rectangle.Fill
+            Dim p As Point = Mouse.GetPosition(drawingCanvas)
+            Canvas.SetLeft(el, p.X)
+            Canvas.SetTop(el, p.Y)
+            If e.MouseDevice.LeftButton = MouseButtonState.Pressed Then
+                Dim r As New Polygon
+                r.Fill = color1Rectangle.Fill
+                r.Points.Add(p + New Point(-6 * widthSlider.Value, 9 * widthSlider.Value))
+                r.Points.Add(p + New Point(5 * widthSlider.Value, 10 * widthSlider.Value))
+                r.Points.Add(p + New Point(2 * widthSlider.Value, 3 * widthSlider.Value))
+                r.Points.Add(p + New Point(3 * widthSlider.Value, -3 * widthSlider.Value))
+                r.Points.Add(p + New Point(4 * widthSlider.Value, -8 * widthSlider.Value))
+                r.Points.Add(p + New Point(-2 * widthSlider.Value, -8 * widthSlider.Value))
+                r.Points.Add(p + New Point(-7 * widthSlider.Value, -6 * widthSlider.Value))
+                r.Points.Add(p + New Point(-8 * widthSlider.Value, 3 * widthSlider.Value))
+                mainCanvas.Children.Add(r)
+            End If
+        End If
+        If shapelabel.Content = "RECTANGLE" Then
+            Dim re As New Ellipse
+            re.Width = widthSlider.Value
+            re.Height = heightSlider.Value
+            re.Fill = color1Rectangle.Fill
+
+            Dim p As Point = Mouse.GetPosition(drawingCanvas)
+            Canvas.SetLeft(re, p.X)
+            Canvas.SetTop(re, p.Y)
+            If e.MouseDevice.LeftButton = MouseButtonState.Pressed Then
+                Dim r As New Polygon
+                r.Fill = color1Rectangle.Fill
+                r.Points.Add(p + New Point(5 * widthSlider.Value, 5 * widthSlider.Value))
+                r.Points.Add(p + New Point(5 * widthSlider.Value, -5 * widthSlider.Value))
+                r.Points.Add(p + New Point(-5 * widthSlider.Value, -5 * widthSlider.Value))
+                r.Points.Add(p + New Point(-5 * widthSlider.Value, 5 * widthSlider.Value))
+                mainCanvas.Children.Add(r)
+            End If
+        End If
+        If shapelabel.Content = "TRIANGLE" Then
+            Dim tr As New Ellipse
+            tr.Width = widthSlider.Value
+            tr.Height = heightSlider.Value
+            tr.Fill = color1Rectangle.Fill
+            Dim p As Point = Mouse.GetPosition(drawingCanvas)
+            Canvas.SetLeft(tr, p.X)
+            Canvas.SetTop(tr, p.Y)
+            If e.MouseDevice.LeftButton = MouseButtonState.Pressed Then
+                Dim r As New Polygon
+                r.Fill = color1Rectangle.Fill
+                r.Points.Add(p + New Point(5 * widthSlider.Value, 0))
+                r.Points.Add(p + New Point(-5 * widthSlider.Value, 0))
+                r.Points.Add(p + New Point(0, -5 * widthSlider.Value))
+                mainCanvas.Children.Add(r)
+            End If
+        End If
+        If shapelabel.Content = "CIRCLE" Then
+            Dim c As New Ellipse
+            c.Width = widthSlider.Value
+            c.Height = heightSlider.Value
+            c.Fill = color1Rectangle.Fill
+            Dim p As Point = Mouse.GetPosition(drawingCanvas)
+            Canvas.SetLeft(c, p.X)
+            Canvas.SetTop(c, p.Y)
+            If e.MouseDevice.LeftButton = MouseButtonState.Pressed Then
+                Dim r As New Polygon
+                r.Fill = color1Rectangle.Fill
+                r.Points.Add(p + New Point(0, 0))
+                mainCanvas.Children.Add(c)
+            End If
         End If
     End Sub
 
@@ -35,7 +98,7 @@ Class MainWindow
         shapelabel.Content = sender.content
     End Sub
 
-    Private Sub rectanglebutton_Click(sender As Object, e As RoutedEventArgs) Handles rectanglebutton.Click
+    Private Sub rectanglebutton_Click(sender As Object, e As RoutedEventArgs) Handles rectanglebutton.click
         shapelabel.Content = sender.content
     End Sub
 
@@ -96,6 +159,14 @@ Class MainWindow
     Private Sub grad2_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles grad2.MouseDown
         grad2.Fill = New SolidColorBrush(Color.FromRgb(rslider.Value, gslider.Value, bslider.Value))
         c2 = (Color.FromRgb(rslider.Value, gslider.Value, bslider.Value))
+    End Sub
+
+    Private Sub trianglebutton_Click(sender As Object, e As RoutedEventArgs) Handles trianglebutton.Click
+        shapelabel.Content = sender.content
+    End Sub
+
+    Private Sub circlebutton_Click(sender As Object, e As RoutedEventArgs) Handles circlebutton.Click
+        shapelabel.Content = sender.content
     End Sub
 End Class
 
