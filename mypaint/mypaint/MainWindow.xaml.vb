@@ -80,9 +80,22 @@ Class MainWindow
                 mainCanvas.Children.Add(c)
             End If
         End If
+        If shapelabel.Content = "BUGATTI" Then
+            Dim myImageBrush As New ImageBrush(flower.Source)
+            Dim myCanvas As New Canvas
+            myCanvas.Width = 100
+            myCanvas.Height = 100
+            myCanvas.Background = myImageBrush
+            Dim p As Point = Mouse.GetPosition(drawingCanvas)
+            Canvas.SetLeft(myCanvas, p.X)
+            Canvas.SetTop(myCanvas, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                mainCanvas.Children.Add(myCanvas)
+            End If
+        End If
     End Sub
 
-    Private Sub color1Rectangle_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles color1Rectangle.MouseDown, color2rectangle.MouseDown, color3rectangle.MouseDown, color4rectangle.MouseDown, color5rectangle.MouseDown, color6rectangle.MouseDown
+    Private Sub color1Rectangle_MouseDown(sender As Object, e As MouseButtonEventArgs) Handles color1Rectangle.MouseDown, color2rectangle.MouseDown, color3rectangle.MouseDown, color4rectangle.MouseDown, color5rectangle.MouseDown, color6rectangle.MouseDown, color7rectanglr.MouseDown
         color1Rectangle.Fill = sender.fill
     End Sub
 
@@ -167,6 +180,10 @@ Class MainWindow
 
     Private Sub circlebutton_Click(sender As Object, e As RoutedEventArgs) Handles circlebutton.Click
         shapelabel.Content = sender.content
+    End Sub
+
+    Private Sub btn5_Click(sender As Object, e As RoutedEventArgs) Handles btn5.Click
+        shapelabel.Content = "BUGATTI"
     End Sub
 End Class
 
